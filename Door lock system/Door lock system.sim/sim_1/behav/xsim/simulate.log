@@ -1,0 +1,6 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_relay_control/p_stimulus  File: C:/Xilinx/Vivado/projekty/DE1_projekt/Door lock system/Door lock system.srcs/sim_1/new/tb_relay_control.vhd
+Note: Stimulus process finished
+Time: 40 ns  Iteration: 0  Process: /tb_relay_control/p_stimulus  File: C:/Xilinx/Vivado/projekty/DE1_projekt/Door lock system/Door lock system.srcs/sim_1/new/tb_relay_control.vhd
