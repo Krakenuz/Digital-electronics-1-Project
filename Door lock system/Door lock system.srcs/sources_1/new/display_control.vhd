@@ -44,10 +44,14 @@ entity display_control is
             Button_9 : in STD_LOGIC;
             Button_RESET : in STD_LOGIC;
             Button_SET : in STD_LOGIC;         
-           Display_1 : out std_logic_vector(4 - 1 downto 0);
-           Display_2 : out std_logic_vector(4 - 1 downto 0);
-           Display_3 : out std_logic_vector(4 - 1 downto 0);
-           Display_4 : out std_logic_vector(4 - 1 downto 0));
+           Display_1 : inout std_logic_vector(4 - 1 downto 0);
+           Display_2 : inout std_logic_vector(4 - 1 downto 0);
+           Display_3 : inout std_logic_vector(4 - 1 downto 0);
+           Display_4 : inout std_logic_vector(4 - 1 downto 0);
+           Passcode_1   : inout std_logic_vector(4 - 1 downto 0);
+           Passcode_2   : inout std_logic_vector(4 - 1 downto 0);
+           Passcode_3   : inout std_logic_vector(4 - 1 downto 0);
+           Passcode_4   : inout std_logic_vector(4 - 1 downto 0));
 end display_control;
 
 architecture Behavioral of display_control is
@@ -55,6 +59,7 @@ architecture Behavioral of display_control is
     signal Buttons  : std_logic_vector(12 - 1 downto 0);
     -- 
     signal cnt : natural;
+    signal set_password : boolean;
 begin
 p_display_control: process(Button_0,Button_1,Button_2,Button_3,Button_4,Button_5,Button_6,Button_7,Button_8,Button_9,Button_Reset,Button_SET)
 begin 
@@ -71,13 +76,14 @@ begin
     Buttons(10) <= Button_RESET;
     Buttons(11) <= Button_SET;
     
-    if (rising_edge(Button_0) or rising_edge(Button_1)or rising_edge(Button_2)or rising_edge(Button_3)or rising_edge(Button_4)or rising_edge(Button_5)or rising_edge(Button_6)or rising_edge(Button_7)or rising_edge(Button_8)or rising_edge(Button_9)or rising_edge(Button_RESET)or rising_edge(Button_SET)) then
+    if (rising_edge(Button_0) or rising_edge(Button_1)or rising_edge(Button_2)or rising_edge(Button_3)or rising_edge(Button_4)or rising_edge(Button_5)or rising_edge(Button_6)or rising_edge(Button_7)or rising_edge(Button_8)or rising_edge(Button_9)) then
+        if cnt<4 then
         cnt <=cnt+1; 
-        
+        end if;
     end if;
     
     case Buttons is
-        when "000000000001" =>
+        when "000000000001" =>  --0
             case cnt is
                 when 1 =>
                     Display_1<="0000";
@@ -89,7 +95,7 @@ begin
                     Display_4<="0000";
                 when others =>    
             end case;
-        when "000000000010" =>
+        when "000000000010" => --1
             case cnt is
                 when 1 =>
                     Display_1<="0001";
@@ -204,12 +210,36 @@ begin
             Display_4<="0000";
             cnt<=0;
         when "100000000000" =>     --SET
-            --domyslet
+            if (Passcode_1 ="UUUU") then
+                Passcode_1 <= Display_1;
+                Passcode_2 <= Display_2;
+                Passcode_3 <= Display_3;
+                Passcode_4 <= Display_4;
+            else
+            if (Display_1 = Passcode_1 and Display_2 = Passcode_2 and Display_3 = Passcode_3 and Display_4 = Passcode_4) then
+                --Vynulování displaye pøed nastavením nového hesla
+                Display_1 <="0000";
+                Display_2 <="0000";
+                Display_3 <="0000";
+                Display_4 <="0000";
+                cnt<=0;
+                --nastavení nového hesla
+                set_password<=true;
+            else
+            if (set_password=true) then
+                Passcode_1 <= Display_1;
+                Passcode_2 <= Display_2;
+                Passcode_3 <= Display_3;
+                Passcode_4 <= Display_4;
+                set_password<=false;
+            end if;
+            end if;
+            end if;
         when others =>   
         
     end case;   
-    --if (cnt >=4) then         --Pøepisovat èíslice bez resetu
-      --      cnt<=0;
-      --  end if;                                                                                                          
+    if (cnt >=4) then         --Pøepisovat èíslice bez resetu
+           cnt<=0;
+    end if;                                                                                                       
 end process p_display_control;
 end Behavioral;

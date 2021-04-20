@@ -1,6 +1,6 @@
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto aab6f50ef0394d9995978929752938d6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_relay_control_behav xil_defaultlib.tb_relay_control -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto aab6f50ef0394d9995978929752938d6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_display_control_behav xil_defaultlib.tb_display_control -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -10,6 +10,6 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.relay_control [relay_control_default]
-Compiling architecture testbench of entity xil_defaultlib.tb_relay_control
-Built simulation snapshot tb_relay_control_behav
+Compiling architecture behavioral of entity xil_defaultlib.display_control [display_control_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_display_control
+Built simulation snapshot tb_display_control_behav

@@ -1,4 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Vivado/projekty/DE1_projekt/Door lock system/Door lock system.srcs/sources_1/new/relay_control.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'relay_control'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Vivado/projekty/DE1_projekt/Door lock system/Door lock system.srcs/sim_1/new/tb_relay_control.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_relay_control'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sim_1/new/tb_display_control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_display_control'

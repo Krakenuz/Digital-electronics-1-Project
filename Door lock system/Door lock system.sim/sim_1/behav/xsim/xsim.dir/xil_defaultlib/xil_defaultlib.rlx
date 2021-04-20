@@ -2,5 +2,7 @@
 2020.2
 Nov 18 2020
 09:47:47
-C:/Xilinx/Vivado/projekty/DE1_projekt/Door lock system/Door lock system.srcs/sim_1/new/tb_relay_control.vhd,1618765937,vhdl,,,,tb_relay_control,,,,,,,,
-C:/Xilinx/Vivado/projekty/DE1_projekt/Door lock system/Door lock system.srcs/sources_1/new/relay_control.vhd,1618764617,vhdl,C:/Xilinx/Vivado/projekty/DE1_projekt/Door lock system/Door lock system.srcs/sim_1/new/tb_relay_control.vhd,,,relay_control,,,,,,,,
+C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sim_1/new/tb_display_control.vhd,1618942764,vhdl,,,,tb_display_control,,,,,,,,
+C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sim_1/new/tb_relay_control.vhd,1618925364,vhdl,,,,tb_relay_control,,,,,,,,
+C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sources_1/new/display_control.vhd,1618941721,vhdl,C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sim_1/new/tb_display_control.vhd,,,display_control,,,,,,,,
+C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sources_1/new/relay_control.vhd,1618925364,vhdl,C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sim_1/new/tb_relay_control.vhd,,,relay_control,,,,,,,,
