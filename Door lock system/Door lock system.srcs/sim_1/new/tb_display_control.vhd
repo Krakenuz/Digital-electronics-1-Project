@@ -36,6 +36,8 @@ entity tb_display_control is
 end tb_display_control;
 
 architecture testbench of tb_display_control is
+    constant c_CLK_100MHZ_PERIOD : time    := 10 ns;
+    signal s_clk_100MHz : std_logic;
     signal s_Button_0 :  STD_LOGIC;
     signal s_Button_1 :  STD_LOGIC;
     signal s_Button_2 :  STD_LOGIC;
@@ -60,6 +62,7 @@ architecture testbench of tb_display_control is
 begin
 	uut_display_control : entity work.display_control
         port map(
+            clk     => s_clk_100MHz,
             Button_0	=>	s_Button_0,
             Button_1	=>	s_Button_1,
             Button_2	=>  s_Button_2,
@@ -80,7 +83,19 @@ begin
            Passcode_2   => s_Passcode_2,
            Passcode_3   => s_Passcode_3,
            Passcode_4   => s_Passcode_4);
-
+--------------------------------------------------------------------
+    -- Clock generation process
+    --------------------------------------------------------------------
+    p_clk_gen : process
+    begin
+        while now < 7500 ns loop         -- 75 periods of 100MHz clock
+            s_clk_100MHz <= '0';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+            s_clk_100MHz <= '1';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+        end loop;
+        wait;
+    end process p_clk_gen;
 	p_stimulus : process
     begin
         report "Stimulus process started" severity note;
@@ -100,7 +115,7 @@ begin
         s_Button_SET <= '0';
 		wait for 50ns;
 		s_Button_1 <= '0';
-		wait for 10ns;
+		wait for 50ns;
 		s_Button_1 <= '1';
 		wait for 50ns;
 		s_Button_1 <= '0';
@@ -116,10 +131,11 @@ begin
 		s_Button_6 <= '0';
 		wait for 10ns;
 		
+		
 		s_Button_RESET <= '1';
 		wait for 50ns;
 		s_Button_RESET <= '0';
-		wait for 10ns;
+		wait for 100ns;
 		
 		s_Button_4 <= '1';
 		wait for 50ns;
@@ -231,6 +247,11 @@ begin
 		s_Button_SET <='0';
 		wait for 10ns;
 		
+		s_Button_RESET <= '1';
+		wait for 50ns;
+		s_Button_RESET <= '0';
+		wait for 10ns;
+		
 		s_Button_9 <= '1';
 		wait for 50ns;
 		s_Button_9 <= '0';
@@ -254,6 +275,11 @@ begin
 		s_Button_SET <='1';
 		wait for 50ns;
 		s_Button_SET <='0';
+		wait for 10ns;
+		
+		s_Button_RESET <= '1';
+		wait for 50ns;
+		s_Button_RESET <= '0';
 		wait for 10ns;
 		
 		s_Button_1 <= '1';
@@ -281,6 +307,11 @@ begin
 		s_Button_SET <='0';
 		wait for 10ns;
 		
+		s_Button_RESET <= '1';
+		wait for 50ns;
+		s_Button_RESET <= '0';
+		wait for 10ns;
+		
 		s_Button_2 <= '1';
 		wait for 50ns;
 		s_Button_2 <= '0';
@@ -305,6 +336,7 @@ begin
 		wait for 50ns;
 		s_Button_SET <='0';
 		wait for 10ns;
+		
 		
         report "Stimulus process finished" severity note;
         wait;

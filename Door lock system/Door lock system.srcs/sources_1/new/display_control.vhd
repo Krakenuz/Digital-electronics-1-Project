@@ -51,7 +51,8 @@ entity display_control is
            Passcode_1   : inout std_logic_vector(4 - 1 downto 0);
            Passcode_2   : inout std_logic_vector(4 - 1 downto 0);
            Passcode_3   : inout std_logic_vector(4 - 1 downto 0);
-           Passcode_4   : inout std_logic_vector(4 - 1 downto 0));
+           Passcode_4   : inout std_logic_vector(4 - 1 downto 0);
+           clk   : in  std_logic);
 end display_control;
 
 architecture Behavioral of display_control is
@@ -60,8 +61,9 @@ architecture Behavioral of display_control is
     -- 
     signal cnt : natural;
     signal set_password : boolean;
+    signal display_time : natural;
 begin
-p_display_control: process(Button_0,Button_1,Button_2,Button_3,Button_4,Button_5,Button_6,Button_7,Button_8,Button_9,Button_Reset,Button_SET)
+p_display_control: process(clk,Button_0,Button_1,Button_2,Button_3,Button_4,Button_5,Button_6,Button_7,Button_8,Button_9,Button_Reset,Button_SET)
 begin 
     Buttons(0) <= Button_0;
     Buttons(1) <= Button_1;
@@ -81,7 +83,33 @@ begin
         cnt <=cnt+1; 
         end if;
     end if;
-    
+    if(rising_edge(Button_SET)) then
+            if (Passcode_1 ="UUUU") then
+                Passcode_1 <= Display_1;
+                Passcode_2 <= Display_2;
+                Passcode_3 <= Display_3;
+                Passcode_4 <= Display_4;
+            else
+            if (Display_1 = Passcode_1 and Display_2 = Passcode_2 and Display_3 = Passcode_3 and Display_4 = Passcode_4) then
+                --Vynulování displaye pøed nastavením nového hesla
+                Display_1 <="0000";
+                Display_2 <="0000";
+                Display_3 <="0000";
+                Display_4 <="0000";
+                cnt<=0;
+                --nastavení nového hesla
+                set_password<=true;
+            else
+            if (set_password=true) then
+                Passcode_1 <= Display_1;
+                Passcode_2 <= Display_2;
+                Passcode_3 <= Display_3;
+                Passcode_4 <= Display_4;
+                set_password<=false;
+            end if;
+            end if;
+            end if;
+            end if;
     case Buttons is
         when "000000000001" =>  --0
             case cnt is
@@ -209,37 +237,26 @@ begin
             Display_3<="0000";
             Display_4<="0000";
             cnt<=0;
-        when "100000000000" =>     --SET
-            if (Passcode_1 ="UUUU") then
-                Passcode_1 <= Display_1;
-                Passcode_2 <= Display_2;
-                Passcode_3 <= Display_3;
-                Passcode_4 <= Display_4;
-            else
-            if (Display_1 = Passcode_1 and Display_2 = Passcode_2 and Display_3 = Passcode_3 and Display_4 = Passcode_4) then
-                --Vynulování displaye pøed nastavením nového hesla
-                Display_1 <="0000";
-                Display_2 <="0000";
-                Display_3 <="0000";
-                Display_4 <="0000";
-                cnt<=0;
-                --nastavení nového hesla
-                set_password<=true;
-            else
-            if (set_password=true) then
-                Passcode_1 <= Display_1;
-                Passcode_2 <= Display_2;
-                Passcode_3 <= Display_3;
-                Passcode_4 <= Display_4;
-                set_password<=false;
-            end if;
-            end if;
-            end if;
+            
         when others =>   
         
-    end case;   
-    if (cnt >=4) then         --Pøepisovat èíslice bez resetu
-           cnt<=0;
-    end if;                                                                                                       
+    end case;
+    if ((rising_edge(clk) and cnt=4)or(rising_edge(clk) and cnt=1)or(rising_edge(clk) and cnt=2)or(rising_edge(clk) and cnt=3)) then
+        display_time <=display_time+10;
+    end if;
+    if(cnt=0) then
+        display_time <=0;
+    end if;
+    if(display_time>500) then
+        Display_1<="0000";
+        Display_2<="0000";
+        Display_3<="0000";
+        Display_4<="0000";
+        cnt<=0;
+        display_time<=0;
+    end if;   
+    --if (cnt >=4) then         --Pøepisovat èíslice bez resetu
+      --     cnt<=0;
+    --end if;                                                                                                       
 end process p_display_control;
 end Behavioral;
