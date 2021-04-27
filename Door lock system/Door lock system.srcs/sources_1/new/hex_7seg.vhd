@@ -33,7 +33,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity hex_7seg is
     Port ( hex_i : in std_logic_vector(4 - 1 downto 0);
-           seg_o : out std_logic_vector(7 - 1 downto 0)	);
+           hex_2_i : in std_logic_vector(4 - 1 downto 0);
+           hex_3_i : in std_logic_vector(4 - 1 downto 0);
+           hex_4_i : in std_logic_vector(4 - 1 downto 0);
+           seg_o : out std_logic_vector(7 - 1 downto 0);
+           seg_2_o : out std_logic_vector(7 - 1 downto 0);
+           seg_3_o : out std_logic_vector(7 - 1 downto 0);
+           seg_4_o : out std_logic_vector(7 - 1 downto 0));
 end hex_7seg;
 
 architecture Behavioral of hex_7seg is
@@ -52,7 +58,7 @@ begin
     --          |||            |
     -- seg_o = "0000001"-------+
     --------------------------------------------------------------------
-    p_7seg_decoder : process(hex_i)
+    p_7seg_decoder : process(hex_i,hex_2_i,hex_3_i,hex_4_i)
     begin
         case hex_i is
             when "0000" =>
@@ -87,6 +93,111 @@ begin
                 seg_o <= "0110000";     --E
             when others =>
                 seg_o <= "0111000";     --F
+        end case;
+        
+        case hex_2_i is
+            when "0000" =>
+                seg_2_o <= "0000001";     --0
+            when "0001" =>
+                seg_2_o <= "1001111";     --1
+            when "0010" =>
+                seg_2_o <= "0010010";     --2  
+            when "0011" =>
+                seg_2_o <= "0000110";     --3
+            when "0100" =>
+                seg_2_o <= "1001100";     --4
+            when "0101" =>
+                seg_2_o <= "0100100";     --5
+            when "0110" =>
+                seg_2_o <= "0100000";     --6
+            when "0111" =>
+                seg_2_o <= "0001111";     --7
+            when "1000" =>
+                seg_2_o <= "0000000";     --8
+            when "1001" =>
+                seg_2_o <= "0000100";     --9
+            when "1010" =>
+                seg_2_o <= "0001000";     --A
+            when "1011" =>
+                seg_2_o <= "1100000";     --B
+            when "1100" =>
+                seg_2_o <= "0110001";     --C
+            when "1101" =>
+                seg_2_o <= "1000010";     --D   
+            when "1110" =>
+                seg_2_o <= "0110000";     --E
+            when others =>
+                seg_2_o <= "0111000";     --F
+        end case;
+        
+        case hex_3_i is
+            when "0000" =>
+                seg_3_o <= "0000001";     --0
+            when "0001" =>
+                seg_3_o <= "1001111";     --1
+            when "0010" =>
+                seg_3_o <= "0010010";     --2  
+            when "0011" =>
+                seg_3_o <= "0000110";     --3
+            when "0100" =>
+                seg_3_o <= "1001100";     --4
+            when "0101" =>
+                seg_3_o <= "0100100";     --5
+            when "0110" =>
+                seg_3_o <= "0100000";     --6
+            when "0111" =>
+                seg_3_o <= "0001111";     --7
+            when "1000" =>
+                seg_3_o <= "0000000";     --8
+            when "1001" =>
+                seg_3_o <= "0000100";     --9
+            when "1010" =>
+                seg_3_o <= "0001000";     --A
+            when "1011" =>
+                seg_3_o <= "1100000";     --B
+            when "1100" =>
+                seg_3_o <= "0110001";     --C
+            when "1101" =>
+                seg_3_o <= "1000010";     --D   
+            when "1110" =>
+                seg_3_o <= "0110000";     --E
+            when others =>
+                seg_3_o <= "0111000";     --F
+        end case;
+        
+        case hex_4_i is
+            when "0000" =>
+                seg_4_o <= "0000001";     --0
+            when "0001" =>
+                seg_4_o <= "1001111";     --1
+            when "0010" =>
+                seg_4_o <= "0010010";     --2  
+            when "0011" =>
+                seg_4_o <= "0000110";     --3
+            when "0100" =>
+                seg_4_o <= "1001100";     --4
+            when "0101" =>
+                seg_4_o <= "0100100";     --5
+            when "0110" =>
+                seg_4_o <= "0100000";     --6
+            when "0111" =>
+                seg_4_o <= "0001111";     --7
+            when "1000" =>
+                seg_4_o <= "0000000";     --8
+            when "1001" =>
+                seg_4_o <= "0000100";     --9
+            when "1010" =>
+                seg_4_o <= "0001000";     --A
+            when "1011" =>
+                seg_4_o <= "1100000";     --B
+            when "1100" =>
+                seg_4_o <= "0110001";     --C
+            when "1101" =>
+                seg_4_o <= "1000010";     --D   
+            when "1110" =>
+                seg_4_o <= "0110000";     --E
+            when others =>
+                seg_4_o <= "0111000";     --F
         end case;
     end process p_7seg_decoder;
 

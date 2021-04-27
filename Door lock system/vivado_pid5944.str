@@ -103,3 +103,1713 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // [Engine Memory]: 1,053 MB (+953047kb) [00:00:28]
 // WARNING: HEventQueue.dispatchEvent() is taking  4634 ms.
 // Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1194.992 ; gain = 0.000 
+// Project name: Door lock system; location: C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 107 MB (+2517kb) [00:00:38]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 122 MB (+9719kb) [00:02:51]
+// PAPropertyPanels.initPanels (display_control.vhd) elapsed time: 0.2s
+// Elapsed time: 144 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, display_control(Behavioral) (display_control.vhd)]", 3, false); // D
+// [GUI Memory]: 129 MB (+1029kb) [00:02:58]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, display_control(Behavioral) (display_control.vhd)]", 3, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 28 seconds
+selectCodeEditor("display_control.vhd", 75, 181); // bP
+selectCodeEditor("display_control.vhd", 74, 280); // bP
+selectCodeEditor("display_control.vhd", 67, 241); // bP
+selectCodeEditor("display_control.vhd", 385, 378); // bP
+selectCodeEditor("display_control.vhd", 70, 319); // bP
+selectCodeEditor("display_control.vhd", 258, 315); // bP
+selectCodeEditor("display_control.vhd", 77, 264); // bP
+selectCodeEditor("display_control.vhd", 241, 321); // bP
+// Elapsed time: 30 seconds
+selectCodeEditor("display_control.vhd", 134, 79); // bP
+// [GUI Memory]: 137 MB (+1541kb) [00:04:12]
+selectCodeEditor("display_control.vhd", 125, 168); // bP
+selectCodeEditor("display_control.vhd", 27, 196); // bP
+selectCodeEditor("display_control.vhd", 132, 213); // bP
+selectCodeEditor("display_control.vhd", 53, 230); // bP
+selectCodeEditor("display_control.vhd", 59, 228); // bP
+selectCodeEditor("display_control.vhd", 59, 229); // bP
+selectCodeEditor("display_control.vhd", 66, 194); // bP
+selectCodeEditor("display_control.vhd", 65, 227); // bP
+selectCodeEditor("display_control.vhd", 151, 193); // bP
+selectCodeEditor("display_control.vhd", 26, 125); // bP
+selectCodeEditor("display_control.vhd", 115, 144); // bP
+selectCodeEditor("display_control.vhd", 242, 145); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// am (cr): Save Project: addNotify
+dismissDialog("Save Project"); // am
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'tb_display_control' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj tb_display_control_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sources_1/new/display_control.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'display_control' INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sim_1/new/tb_display_control.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'tb_display_control' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto aab6f50ef0394d9995978929752938d6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_display_control_behav xil_defaultlib.tb_display_control -log elaborate.log" 
+// Tcl Message: Built simulation snapshot tb_display_control_behav 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message:  ****** Webtalk v2020.2 (64-bit)   **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020   **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.  source C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door -notrace couldn't read file "C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door": no such file or directory INFO: [Common 17-206] Exiting Webtalk at Tue Apr 27 18:53:35 2021... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1194.992 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_display_control_behav -key {Behavioral:sim_1:Functional:tb_display_control} -tclbatch {tb_display_control.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2020.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// WARNING: HEventQueue.dispatchEvent() is taking  1707 ms.
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 13 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source tb_display_control.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 6:53:40 PM CEST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// WARNING: HEventQueue.dispatchEvent() is taking  1705 ms.
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 4000ns 
+// Tcl Message: Note: Stimulus process started Time: 0 ps  Iteration: 0  Process: /tb_display_control/p_stimulus  File: C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sim_1/new/tb_display_control.vhd Note: Stimulus process finished Time: 3040 ns  Iteration: 0  Process: /tb_display_control/p_stimulus  File: C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sim_1/new/tb_display_control.vhd xsim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1194.992 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_display_control_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 4000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1194.992 ; gain = 0.000 
+// 'd' command handler elapsed time: 17 seconds
+dismissDialog("Run Simulation"); // e
+// PAPropertyPanels.initPanels (display_control.vhd) elapsed time: 0.8s
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 978ms to process. Increasing delay to 3000 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 6:53:50 PM CEST
+selectButton(RDIResource.WaveformView_GOTO_TIME_0, "Waveform Viewer_RunReset"); // E
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 6:53:53 PM CEST
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, s_Button_1]", 2, false); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 91 MB. Current time: 4/27/21, 6:53:59 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 111, 303); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 146, 211); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 249, 165); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 132 MB. Current time: 4/27/21, 6:54:14 PM CEST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 278, 198); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 306, 266); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 344, 159); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 6:54:16 PM CEST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 187, 456); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 197, 481); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 205, 505); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 6:54:20 PM CEST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 211, 537); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 371, 335); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 515, 462); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 6:54:26 PM CEST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 509, 486); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 477, 512); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 513, 533); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 6:54:27 PM CEST
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_control.vhd", 0); // m
+// Elapsed time: 13 seconds
+selectCodeEditor("display_control.vhd", 118, 263); // bP
+selectCodeEditor("display_control.vhd", 195, 298); // bP
+selectCodeEditor("display_control.vhd", 171, 343); // bP
+// Elapsed time: 20 seconds
+selectCodeEditor("display_control.vhd", 28, 415); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("display_control.vhd", 182, 417); // bP
+selectCodeEditor("display_control.vhd", 318, 415); // bP
+selectCodeEditor("display_control.vhd", 28, 515); // bP
+selectCodeEditor("display_control.vhd", 31, 421); // bP
+selectCodeEditor("display_control.vhd", 27, 517); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("display_control.vhd", 386, 496); // bP
+// Elapsed time: 12 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// Elapsed time: 209 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 1); // m
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 92 MB. Current time: 4/27/21, 6:59:54 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 6:59:55 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 6:59:55 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 96 MB. Current time: 4/27/21, 6:59:55 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 908, 367); // n
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 909, 401); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:00 PM CEST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 862, 413); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 866, 439); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:02 PM CEST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 827, 466); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 773, 465); // n
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 94 MB. Current time: 4/27/21, 7:00:03 PM CEST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 787, 486); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 835, 511); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 837, 530); // n
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:04 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 544, 572); // n
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_control.vhd", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 1); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:27 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 92 MB. Current time: 4/27/21, 7:00:27 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:27 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:29 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 95 MB. Current time: 4/27/21, 7:00:29 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:29 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 28 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, s_Button_0]", 1, false); // a
+// [GUI Memory]: 144 MB (+293kb) [00:12:26]
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, s_Button_9]", 10, false); // a
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:42 PM CEST
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, s_Button_RESET]", 11, false); // a
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, s_Display_1[3:0]]", 13, true); // a - Node
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, s_Button_SET]", 12, false); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:46 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 100 MB. Current time: 4/27/21, 7:00:50 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 88 MB. Current time: 4/27/21, 7:00:50 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:50 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:51 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:51 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:51 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:51 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:52 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:52 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:52 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 99 MB. Current time: 4/27/21, 7:00:52 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:53 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 99 MB. Current time: 4/27/21, 7:00:53 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:53 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 89 MB. Current time: 4/27/21, 7:00:53 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:53 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 7:00:54 PM CEST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_control.vhd", 0); // m
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 527, 566); // nWaveform: addNotify
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 224 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// Elapsed time: 15 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_control.vhd", 0); // m
+// Elapsed time: 119 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// Elapsed time: 86 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// Elapsed time: 121 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a
+// Elapsed time: 24 seconds
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "top"); // aa
+// Elapsed time: 11 seconds
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "VHDL", 3); // cm
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 65 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open {C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sources_1/new/top.vhd} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sources_1/new/top.vhd}} 
+// I (cr): Define Module: addNotify
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 0, (String) null, 0); // ab
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "test", 0, "Port Name", 0); // ab
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 135 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(Behavioral) (top.vhd)]", 6, false, false, false, false, false, true); // D - Double Click
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// Elapsed time: 34 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// Elapsed time: 446 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 7); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Arty A7-100T.xdc]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Arty A7-100T.xdc]", 9, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 35 seconds
+selectCodeEditor("Arty A7-100T.xdc", 12, 114); // bP
+selectCodeEditor("Arty A7-100T.xdc", 7, 112); // bP
+selectCodeEditor("Arty A7-100T.xdc", 6, 123); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Arty A7-100T.xdc", 582, 109); // bP
+selectCodeEditor("Arty A7-100T.xdc", 548, 101); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("Arty A7-100T.xdc", 579, 110); // bP
+typeControlKey((HResource) null, "Arty A7-100T.xdc", 'c'); // bP
+typeControlKey((HResource) null, "Arty A7-100T.xdc", 'c'); // bP
+typeControlKey((HResource) null, "Arty A7-100T.xdc", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 2); // m
+selectCodeEditor("top.vhd", 104, 400); // bP
+typeControlKey((HResource) null, "top.vhd", 'v'); // bP
+selectCodeEditor("top.vhd", 244, 400); // bP
+// Elapsed time: 27 seconds
+selectCodeEditor("top.vhd", 250, 396); // bP
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Arty A7-100T.xdc", 3); // m
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 2); // m
+selectCodeEditor("top.vhd", 262, 398); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Arty A7-100T.xdc", 3); // m
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 86 MB. Current time: 4/27/21, 7:30:55 PM CEST
+// Elapsed time: 871 seconds
+selectCodeEditor("Arty A7-100T.xdc", 214, 230); // bP
+typeControlKey((HResource) null, "Arty A7-100T.xdc", 'c'); // bP
+typeControlKey((HResource) null, "Arty A7-100T.xdc", 'c'); // bP
+typeControlKey((HResource) null, "Arty A7-100T.xdc", 'c'); // bP
+// Elapsed time: 74 seconds
+selectCodeEditor("Arty A7-100T.xdc", 231, 299); // bP
+selectCodeEditor("Arty A7-100T.xdc", 246, 164); // bP
+// Elapsed time: 312 seconds
+selectCodeEditor("Arty A7-100T.xdc", 7, 318); // bP
+selectCodeEditor("Arty A7-100T.xdc", 9, 330); // bP
+selectCodeEditor("Arty A7-100T.xdc", 10, 344); // bP
+selectCodeEditor("Arty A7-100T.xdc", 9, 362); // bP
+selectCodeEditor("Arty A7-100T.xdc", 6, 379); // bP
+selectCodeEditor("Arty A7-100T.xdc", 3, 401); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("Arty A7-100T.xdc", 9, 282); // bP
+selectCodeEditor("Arty A7-100T.xdc", 3, 298); // bP
+selectCodeEditor("Arty A7-100T.xdc", 4, 313); // bP
+selectCodeEditor("Arty A7-100T.xdc", 5, 332); // bP
+selectCodeEditor("Arty A7-100T.xdc", 7, 349); // bP
+selectCodeEditor("Arty A7-100T.xdc", 6, 366); // bP
+selectCodeEditor("Arty A7-100T.xdc", 7, 380); // bP
+selectCodeEditor("Arty A7-100T.xdc", 5, 396); // bP
+// Elapsed time: 26 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("Arty A7-100T.xdc", 9, 299); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("Arty A7-100T.xdc", 10, 375); // bP
+selectCodeEditor("Arty A7-100T.xdc", 10, 365); // bP
+selectCodeEditor("Arty A7-100T.xdc", 6, 386); // bP
+selectCodeEditor("Arty A7-100T.xdc", 8, 396); // bP
+selectCodeEditor("Arty A7-100T.xdc", 4, 413); // bP
+selectCodeEditor("Arty A7-100T.xdc", 7, 432); // bP
+selectCodeEditor("Arty A7-100T.xdc", 13, 453); // bP
+selectCodeEditor("Arty A7-100T.xdc", 8, 456); // bP
+selectCodeEditor("Arty A7-100T.xdc", 8, 471); // bP
+selectCodeEditor("Arty A7-100T.xdc", 10, 486); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 79 MB. Current time: 4/27/21, 8:00:55 PM CEST
+// Elapsed time: 1216 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// Elapsed time: 99 seconds
+selectCodeEditor("Arty A7-100T.xdc", 14, 253); // bP
+// Elapsed time: 33 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 2); // m
+// Elapsed time: 59 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "VHDL", 3); // cm
+// Elapsed time: 75 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "door_lock_system"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 82 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open {C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sources_1/new/door_lock_system.vhd} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sources_1/new/door_lock_system.vhd}} 
+// I (cr): Define Module: addNotify
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 0, (String) null, 0); // ab
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "test", 0, "Port Name", 0); // ab
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Arty A7-100T.xdc", 3); // m
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, door_lock_system(Behavioral) (door_lock_system.vhd)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, door_lock_system(Behavioral) (door_lock_system.vhd)]", 4, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 34 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+selectCodeEditor("door_lock_system.vhd", 88, 474); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("door_lock_system.vhd", 209, 398); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+// Elapsed time: 102 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_control.vhd", 0); // m
+selectCodeEditor("display_control.vhd", 76, 141); // bP
+// Elapsed time: 28 seconds
+selectCodeEditor("display_control.vhd", 198, 259, false, false, false, true, false); // bP - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ak
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "door_lock_system.vhd", 4); // m
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 85, 386); // bP
+// Elapsed time: 26 seconds
+selectCodeEditor("door_lock_system.vhd", 283, 500); // bP
+// Elapsed time: 35 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, relay_control(Behavioral) (relay_control.vhd)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, relay_control(Behavioral) (relay_control.vhd)]", 6, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("relay_control.vhd", 274, 348); // bP
+selectCodeEditor("relay_control.vhd", 74, 356); // bP
+selectCodeEditor("relay_control.vhd", 282, 347); // bP
+typeControlKey((HResource) null, "relay_control.vhd", 'c'); // bP
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "door_lock_system.vhd", 4); // m
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_control.vhd", 0); // m
+// Elapsed time: 88 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "relay_control.vhd", 5); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_control.vhd", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_control.vhd", 0); // m
+// Elapsed time: 206 seconds
+selectCodeEditor("display_control.vhd", 172, 41); // bP
+selectCodeEditor("display_control.vhd", 394, 122); // bP
+selectCodeEditor("display_control.vhd", 172, 94); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("display_control.vhd", 194, 108); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("display_control.vhd", 76, 198); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 165, 436); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 81, 195); // bP
+// Elapsed time: 57 seconds
+selectCodeEditor("display_control.vhd", 136, 179); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("display_control.vhd", 182, 173); // bP
+// Elapsed time: 24 seconds
+selectCodeEditor("display_control.vhd", 77, 176); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 56 seconds
+selectCodeEditor("display_control.vhd", 139, 181); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("display_control.vhd", 113, 380); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 111, 399); // bP
+// Elapsed time: 46 seconds
+selectCodeEditor("display_control.vhd", 263, 333); // bP
+selectCodeEditor("display_control.vhd", 269, 331); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 272, 329); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 76, 196); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 139, 295); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 140, 343); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 262, 350); // bP
+selectCodeEditor("display_control.vhd", 139, 383); // bP
+selectCodeEditor("display_control.vhd", 131, 398); // bP
+selectCodeEditor("display_control.vhd", 139, 397); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 263, 402); // bP
+selectCodeEditor("display_control.vhd", 140, 452); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 264, 450); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("display_control.vhd", 335, 245); // bP
+selectCodeEditor("display_control.vhd", 265, 346); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 277, 352); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 285, 397); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("display_control.vhd", 200, 150); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 141, 362); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 329, 367); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 180, 416); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 264, 419); // bP
+selectCodeEditor("display_control.vhd", 265, 454); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 268, 466); // bP
+selectCodeEditor("display_control.vhd", 273, 499); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 265, 518); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectCodeEditor("display_control.vhd", 266, 312); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 270, 310); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 203, 114); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 142, 329); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 331, 328); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 276, 366); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 269, 385); // bP
+selectCodeEditor("display_control.vhd", 278, 409); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 264, 433); // bP
+selectCodeEditor("display_control.vhd", 290, 468); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 265, 486); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("display_control.vhd", 331, 179); // bP
+selectCodeEditor("display_control.vhd", 335, 229); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 277, 334); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 250, 334); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 313, 346); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 323, 350); // bP
+selectCodeEditor("display_control.vhd", 330, 347); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 274, 383); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 268, 397); // bP
+selectCodeEditor("display_control.vhd", 275, 438); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 267, 452); // bP
+selectCodeEditor("display_control.vhd", 280, 479); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 266, 504); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("display_control.vhd", 275, 249); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 250, 240); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 315, 265); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 332, 264); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 293, 298); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 265, 318); // bP
+selectCodeEditor("display_control.vhd", 279, 345); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 78 MB. Current time: 4/27/21, 8:30:56 PM CEST
+selectCodeEditor("display_control.vhd", 265, 366); // bP
+selectCodeEditor("display_control.vhd", 266, 401); // bP
+selectCodeEditor("display_control.vhd", 281, 397); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 266, 415); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("display_control.vhd", 269, 315); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 252, 314); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 314, 330); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 333, 331); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 270, 368); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 269, 384); // bP
+selectCodeEditor("display_control.vhd", 283, 420); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 261, 432); // bP
+selectCodeEditor("display_control.vhd", 279, 462); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 269, 490); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("display_control.vhd", 281, 225); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 248, 228); // bP
+selectCodeEditor("display_control.vhd", 252, 230); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 312, 244); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 335, 247); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 278, 280); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 263, 295); // bP
+selectCodeEditor("display_control.vhd", 275, 331); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 263, 344); // bP
+selectCodeEditor("display_control.vhd", 279, 380); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 266, 398); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("display_control.vhd", 275, 245); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 253, 248); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 315, 260); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 334, 265); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 284, 299); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 267, 315); // bP
+selectCodeEditor("display_control.vhd", 290, 353); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 265, 363); // bP
+selectCodeEditor("display_control.vhd", 283, 395); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 267, 416); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("display_control.vhd", 277, 258); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 249, 266); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 314, 284); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 327, 280); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 275, 317); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 265, 330); // bP
+selectCodeEditor("display_control.vhd", 284, 364); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 264, 379); // bP
+selectCodeEditor("display_control.vhd", 271, 421); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 263, 435); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("display_control.vhd", 278, 227); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 314, 246); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("display_control.vhd", 251, 228); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 313, 246); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 343, 244); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 272, 283); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 264, 298); // bP
+selectCodeEditor("display_control.vhd", 281, 335); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 263, 347); // bP
+selectCodeEditor("display_control.vhd", 277, 379); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 268, 403); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("display_control.vhd", 208, 465); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 194, 418); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 257, 485); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 277, 487); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 288, 486); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 208, 501); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("display_control.vhd", 276, 229); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 181, 400); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 83, 431); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 22 seconds
+selectCodeEditor("display_control.vhd", 256, 345); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 110, 365); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("display_control.vhd", 173, 212); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+// Elapsed time: 32 seconds
+selectCodeEditor("display_control.vhd", 114, 214); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 259, 213); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 428, 211); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 577, 214); // bP
+selectCodeEditor("display_control.vhd", 574, 214, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("display_control.vhd", 575, 213); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 375, 214); // bP
+selectCodeEditor("display_control.vhd", 377, 213); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 529, 215); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 695, 216); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 843, 214); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 21 seconds
+selectCodeEditor("display_control.vhd", 276, 179); // bP
+selectCodeEditor("display_control.vhd", 280, 178); // bP
+selectCodeEditor("display_control.vhd", 212, 125); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 345, 177); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 353, 180); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectCodeEditor("display_control.vhd", 271, 130); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 112, 129); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("display_control.vhd", 407, 250); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("display_control.vhd", 370, 327); // bP
+selectCodeEditor("display_control.vhd", 408, 246); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectCodeEditor("display_control.vhd", 278, 332); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'v'); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 11); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 12); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// bz (cr):  Close : addNotify
+selectButton("OptionPane.button", "Yes"); // JButton
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// e (cr):  Run Simulation : addNotify
+dismissDialog("Close"); // bz
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'tb_display_control' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj tb_display_control_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sources_1/new/display_control.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'display_control' INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sim_1/new/tb_display_control.vhd" into library xil_defaultlib INFO: [VRFC 10-3107] analyzing entity 'tb_display_control' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto aab6f50ef0394d9995978929752938d6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_display_control_behav xil_defaultlib.tb_display_control -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_display_control_behav -key {Behavioral:sim_1:Functional:tb_display_control} -tclbatch {tb_display_control.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2020.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// WARNING: HEventQueue.dispatchEvent() is taking  1270 ms.
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: source tb_display_control.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:38:08 PM CEST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// WARNING: HEventQueue.dispatchEvent() is taking  1797 ms.
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 4000ns 
+// Tcl Message: Note: Stimulus process started Time: 0 ps  Iteration: 0  Process: /tb_display_control/p_stimulus  File: C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sim_1/new/tb_display_control.vhd Note: Stimulus process finished Time: 3040 ns  Iteration: 0  Process: /tb_display_control/p_stimulus  File: C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sim_1/new/tb_display_control.vhd xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1194.992 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_display_control_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 4000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1194.992 ; gain = 0.000 
+// 'd' command handler elapsed time: 17 seconds
+dismissDialog("Run Simulation"); // e
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Elapsed time: 149 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.WaveformView_GOTO_TIME_0, "Waveform Viewer_RunReset"); // E
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:40:41 PM CEST
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // E
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:01 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:01 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:01 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:02 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:02 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:02 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:03 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:04 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:04 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:04 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:04 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:04 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:05 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:05 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:05 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:06 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:14 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:14 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:14 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:15 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:15 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:15 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 88 MB. Current time: 4/27/21, 8:41:15 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:15 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:16 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:16 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:16 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:16 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:19 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 8:41:20 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 91 MB. Current time: 4/27/21, 8:41:20 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 86 MB. Current time: 4/27/21, 8:41:20 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:20 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:22 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:23 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:23 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:23 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:24 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:24 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:24 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:24 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:25 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:25 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:25 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:25 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:26 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:26 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 87 MB. Current time: 4/27/21, 8:41:26 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 88 MB. Current time: 4/27/21, 8:41:26 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:27 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 89 MB. Current time: 4/27/21, 8:41:27 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:27 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:27 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:28 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:28 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:28 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:28 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:29 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:29 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:29 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:29 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:29 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:30 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:30 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:31 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:32 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:32 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:32 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:32 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:33 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:33 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:33 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:34 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:34 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:35 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:41 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:41 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:41 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:41 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:42 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:42 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:42 PM CEST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 82 MB. Current time: 4/27/21, 8:41:42 PM CEST
+// Elapsed time: 61 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_control.vhd", 0); // m
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "door_lock_system.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "relay_control.vhd", 4); // m
+// Elapsed time: 24 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aK
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hex_7seg(Behavioral) (hex_7seg.vhd)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hex_7seg(Behavioral) (hex_7seg.vhd)]", 5, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 57 seconds
+selectCodeEditor("hex_7seg.vhd", 385, 263); // bP
+typeControlKey((HResource) null, "hex_7seg.vhd", 'c'); // bP
+typeControlKey((HResource) null, "hex_7seg.vhd", 'v'); // bP
+selectCodeEditor("hex_7seg.vhd", 84, 282); // bP
+selectCodeEditor("hex_7seg.vhd", 392, 274); // bP
+selectCodeEditor("hex_7seg.vhd", 96, 284); // bP
+selectCodeEditor("hex_7seg.vhd", 403, 285); // bP
+typeControlKey((HResource) null, "hex_7seg.vhd", 'v'); // bP
+selectCodeEditor("hex_7seg.vhd", 99, 301); // bP
+selectCodeEditor("hex_7seg.vhd", 407, 294); // bP
+typeControlKey((HResource) null, "hex_7seg.vhd", 'v'); // bP
+selectCodeEditor("hex_7seg.vhd", 99, 316); // bP
+selectCodeEditor("hex_7seg.vhd", 384, 331); // bP
+selectCodeEditor("hex_7seg.vhd", 77, 333); // bP
+typeControlKey((HResource) null, "hex_7seg.vhd", 'c'); // bP
+typeControlKey((HResource) null, "hex_7seg.vhd", 'v'); // bP
+selectCodeEditor("hex_7seg.vhd", 97, 350); // bP
+selectCodeEditor("hex_7seg.vhd", 404, 349); // bP
+typeControlKey((HResource) null, "hex_7seg.vhd", 'v'); // bP
+selectCodeEditor("hex_7seg.vhd", 99, 369); // bP
+selectCodeEditor("hex_7seg.vhd", 404, 364); // bP
+typeControlKey((HResource) null, "hex_7seg.vhd", 'v'); // bP
+selectCodeEditor("hex_7seg.vhd", 97, 387); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("hex_7seg.vhd", 421, 383); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("hex_7seg.vhd", 56, 127); // bP
+typeControlKey((HResource) null, "hex_7seg.vhd", 'c'); // bP
+typeControlKey((HResource) null, "hex_7seg.vhd", 'v'); // bP
+typeControlKey((HResource) null, "hex_7seg.vhd", 'v'); // bP
+typeControlKey((HResource) null, "hex_7seg.vhd", 'v'); // bP
+selectCodeEditor("hex_7seg.vhd", 110, 250); // bP
+selectCodeEditor("hex_7seg.vhd", 131, 286); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("hex_7seg.vhd", 57, 247); // bP
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 37 seconds
+selectCodeEditor("hex_7seg.vhd", 105, 487); // bP
+typeControlKey((HResource) null, "hex_7seg.vhd", 'v'); // bP
+// Elapsed time: 39 seconds
+selectCodeEditor("hex_7seg.vhd", 96, 514); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("hex_7seg.vhd", 158, 485); // bP
+typeControlKey((HResource) null, "hex_7seg.vhd", 'v'); // bP
+// Elapsed time: 43 seconds
+selectCodeEditor("hex_7seg.vhd", 113, 488); // bP
+typeControlKey((HResource) null, "hex_7seg.vhd", 'v'); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// Elapsed time: 356 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "door_lock_system.vhd", 3); // m
+selectCodeEditor("door_lock_system.vhd", 282, 416); // bP
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "relay_control.vhd", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 2", 5); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hex_7seg.vhd", 6); // m
+selectCodeEditor("hex_7seg.vhd", 76, 229); // bP
+typeControlKey((HResource) null, "hex_7seg.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "door_lock_system.vhd", 3); // m
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("door_lock_system.vhd", 148, 435); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("door_lock_system.vhd", 279, 415); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 51 seconds
+selectCodeEditor("door_lock_system.vhd", 172, 500); // bP
+// Elapsed time: 90 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("door_lock_system.vhd", 125, 500); // bP
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 18 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_control.vhd", 0); // m
+selectCodeEditor("display_control.vhd", 76, 127); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "door_lock_system.vhd", 3); // m
+selectCodeEditor("door_lock_system.vhd", 110, 518); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 267, 141); // bP
+// Elapsed time: 23 seconds
+selectCodeEditor("door_lock_system.vhd", 76, 178); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("door_lock_system.vhd", 175, 352); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 259, 365); // bP
+selectCodeEditor("door_lock_system.vhd", 239, 345); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("door_lock_system.vhd", 255, 367); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 222, 350); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("door_lock_system.vhd", 231, 366); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 225, 368); // bP
+selectCodeEditor("door_lock_system.vhd", 270, 388); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 149, 386); // bP
+selectCodeEditor("door_lock_system.vhd", 217, 386); // bP
+selectCodeEditor("door_lock_system.vhd", 222, 375); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'c'); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("door_lock_system.vhd", 270, 399); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 209, 402); // bP
+selectCodeEditor("door_lock_system.vhd", 273, 413); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 208, 418); // bP
+selectCodeEditor("door_lock_system.vhd", 254, 436); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 209, 435); // bP
+selectCodeEditor("door_lock_system.vhd", 255, 449); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 204, 447); // bP
+selectCodeEditor("door_lock_system.vhd", 256, 467); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 208, 468); // bP
+selectCodeEditor("door_lock_system.vhd", 257, 384); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 209, 387); // bP
+selectCodeEditor("door_lock_system.vhd", 261, 398); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 208, 401); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectCodeEditor("door_lock_system.vhd", 287, 316); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 238, 312); // bP
+selectCodeEditor("door_lock_system.vhd", 273, 329); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 223, 333); // bP
+selectCodeEditor("door_lock_system.vhd", 425, 347); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 140, 350); // bP
+// Elapsed time: 25 seconds
+selectCodeEditor("door_lock_system.vhd", 191, 318); // bP
+selectCodeEditor("door_lock_system.vhd", 180, 327); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_control.vhd", 0); // m
+selectCodeEditor("display_control.vhd", 27, 229); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "door_lock_system.vhd", 3); // m
+// Elapsed time: 20 seconds
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("door_lock_system.vhd", 203, 233); // bP
+selectCodeEditor("door_lock_system.vhd", 191, 224); // bP
+selectCodeEditor("door_lock_system.vhd", 202, 230); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("door_lock_system.vhd", 154, 416); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 288, 416); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("door_lock_system.vhd", 426, 429); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 279, 431); // bP
+selectCodeEditor("door_lock_system.vhd", 438, 451); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 275, 448); // bP
+selectCodeEditor("door_lock_system.vhd", 426, 471); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 276, 472); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("door_lock_system.vhd", 211, 301); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("door_lock_system.vhd", 443, 433); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("door_lock_system.vhd", 447, 449); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 293, 449); // bP
+selectCodeEditor("door_lock_system.vhd", 452, 470); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 294, 466); // bP
+selectCodeEditor("door_lock_system.vhd", 453, 486); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 292, 486); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("door_lock_system.vhd", 252, 501); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("door_lock_system.vhd", 101, 504); // bP
+selectCodeEditor("door_lock_system.vhd", 52, 113); // bP
+selectCodeEditor("door_lock_system.vhd", 169, 498); // bP
+selectCodeEditor("door_lock_system.vhd", 92, 506); // bP
+selectCodeEditor("door_lock_system.vhd", 75, 531); // bP
+// Elapsed time: 39 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "relay_control.vhd", 4); // m
+selectCodeEditor("relay_control.vhd", 76, 213); // bP
+typeControlKey((HResource) null, "relay_control.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "door_lock_system.vhd", 3); // m
+selectCodeEditor("door_lock_system.vhd", 136, 535); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 79, 363); // bP
+// Elapsed time: 14 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_control.vhd", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "door_lock_system.vhd", 3); // m
+selectCodeEditor("door_lock_system.vhd", 160, 298); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("door_lock_system.vhd", 303, 297); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("door_lock_system.vhd", 474, 348); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 466, 368); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 329, 366); // bP
+selectCodeEditor("door_lock_system.vhd", 467, 383); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 484, 402); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_control.vhd", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "door_lock_system.vhd", 3); // m
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("door_lock_system.vhd", 154, 130); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("door_lock_system.vhd", 475, 423); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("door_lock_system.vhd", 481, 430); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 313, 430); // bP
+selectCodeEditor("door_lock_system.vhd", 475, 450); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 313, 458); // bP
+selectCodeEditor("door_lock_system.vhd", 475, 468); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 315, 471); // bP
+selectCodeEditor("door_lock_system.vhd", 323, 488); // bP
+// Elapsed time: 30 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("door_lock_system.vhd", 119, 515); // bP
+selectCodeEditor("door_lock_system.vhd", 120, 505); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 77 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hex_7seg.vhd", 6); // m
+selectCodeEditor("hex_7seg.vhd", 77, 161); // bP
+typeControlKey((HResource) null, "hex_7seg.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "door_lock_system.vhd", 3); // m
+selectCodeEditor("door_lock_system.vhd", 140, 475); // bP
+selectCodeEditor("door_lock_system.vhd", 150, 487); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 77, 448); // bP
+// Elapsed time: 20 seconds
+selectCodeEditor("door_lock_system.vhd", 188, 283); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("door_lock_system.vhd", 146, 435); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 441, 448); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 444, 465); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 433, 484); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("door_lock_system.vhd", 113, 434); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("door_lock_system.vhd", 428, 438); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("door_lock_system.vhd", 442, 449); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 199, 451); // bP
+selectCodeEditor("door_lock_system.vhd", 443, 469); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("door_lock_system.vhd", 200, 469); // bP
+selectCodeEditor("door_lock_system.vhd", 441, 480); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'v'); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("door_lock_system.vhd", 241, 482); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 49 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 8, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "VHDL", 3); // cm
+// Elapsed time: 11 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "tb_door_lock_system"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 18 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// Tcl Message: close [ open {C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sim_1/new/tb_door_lock_system.vhd} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 {{C:/Users/PC/Documents/VUT/Digitlnelektronika1/Cvika/Digital-electronics-1-Project/Door lock system/Door lock system.srcs/sim_1/new/tb_door_lock_system.vhd}} 
+// I (cr): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_display_control(testbench) (tb_display_control.vhd)]", 10, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_display_control(testbench) (tb_display_control.vhd)]", 10, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_display_control(testbench) (tb_display_control.vhd)]", 10, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("tb_display_control.vhd", 148, 235); // bP
+typeControlKey((HResource) null, "tb_display_control.vhd", 'c'); // bP
+typeControlKey((HResource) null, "tb_display_control.vhd", 'c'); // bP
+typeControlKey((HResource) null, "tb_display_control.vhd", 'c'); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 84 MB. Current time: 4/27/21, 9:11:47 PM CEST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_door_lock_system(Behavioral) (tb_door_lock_system.vhd)]", 16, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_door_lock_system(Behavioral) (tb_door_lock_system.vhd)]", 16, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("tb_door_lock_system.vhd", 275, 366); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'v'); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("tb_door_lock_system.vhd", 175, 315); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 153, 347); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 305, 383); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'v'); // bP
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tb_door_lock_system.vhd", 235, 111); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'v'); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 34 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "door_lock_system.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Arty A7-100T.xdc", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "door_lock_system.vhd", 3); // m
+selectCodeEditor("door_lock_system.vhd", 74, 180); // bP
+typeControlKey((HResource) null, "door_lock_system.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_door_lock_system.vhd", 8); // m
+// Elapsed time: 132 seconds
+selectCodeEditor("tb_door_lock_system.vhd", 156, 382); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("tb_door_lock_system.vhd", 257, 364); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 409, 381); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'v'); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("tb_door_lock_system.vhd", 418, 451); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 414, 439); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 416, 423); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 139, 386); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("tb_door_lock_system.vhd", 306, 442); // bP
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hex_7seg.vhd", 6); // m
+// Elapsed time: 13 seconds
+selectCodeEditor("hex_7seg.vhd", 228, 96); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "door_lock_system.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_door_lock_system.vhd", 8); // m
+selectCodeEditor("tb_door_lock_system.vhd", 307, 401); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 425, 466); // bP
+// Elapsed time: 43 seconds
+selectCodeEditor("tb_door_lock_system.vhd", 152, 401); // bP
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_display_control.vhd", 7); // m
+selectCodeEditor("tb_display_control.vhd", 482, 252); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_door_lock_system.vhd", 8); // m
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tb_door_lock_system.vhd", 239, 378); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 137, 398); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 127, 384); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 123, 385); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 77, 405); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 185, 403); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tb_door_lock_system.vhd", 426, 465); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 126, 399); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'c'); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 160, 429); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 159, 450); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'v'); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tb_door_lock_system.vhd", 426, 463); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_display_control.vhd", 7); // m
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_door_lock_system.vhd", 8); // m
+// Elapsed time: 28 seconds
+selectCodeEditor("tb_door_lock_system.vhd", 268, 192); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 24 seconds
+selectCodeEditor("tb_door_lock_system.vhd", 141, 399); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("tb_door_lock_system.vhd", 258, 397); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 104, 400); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 238, 398); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 240, 401); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'c'); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 283, 421); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 282, 433); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 276, 447); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 77, 447); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 281, 448); // bP
+typeControlKey((HResource) null, "tb_door_lock_system.vhd", 'v'); // bP
+selectCodeEditor("tb_door_lock_system.vhd", 78, 418); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("tb_door_lock_system.vhd", 204, 401); // bP

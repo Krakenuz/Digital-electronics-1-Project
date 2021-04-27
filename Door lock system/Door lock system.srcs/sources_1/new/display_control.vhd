@@ -44,14 +44,14 @@ entity display_control is
             Button_9 : in STD_LOGIC;
             Button_RESET : in STD_LOGIC;
             Button_SET : in STD_LOGIC;         
-           Display_1 : inout std_logic_vector(4 - 1 downto 0);
-           Display_2 : inout std_logic_vector(4 - 1 downto 0);
-           Display_3 : inout std_logic_vector(4 - 1 downto 0);
-           Display_4 : inout std_logic_vector(4 - 1 downto 0);
-           Passcode_1   : inout std_logic_vector(4 - 1 downto 0);
-           Passcode_2   : inout std_logic_vector(4 - 1 downto 0);
-           Passcode_3   : inout std_logic_vector(4 - 1 downto 0);
-           Passcode_4   : inout std_logic_vector(4 - 1 downto 0);
+           Display_1 : out std_logic_vector(4 - 1 downto 0);
+           Display_2 : out std_logic_vector(4 - 1 downto 0);
+           Display_3 : out std_logic_vector(4 - 1 downto 0);
+           Display_4 : out std_logic_vector(4 - 1 downto 0);
+           Passcode_1   : out std_logic_vector(4 - 1 downto 0);
+           Passcode_2   : out std_logic_vector(4 - 1 downto 0);
+           Passcode_3   : out std_logic_vector(4 - 1 downto 0);
+           Passcode_4   : out std_logic_vector(4 - 1 downto 0);
            clk   : in  std_logic);
 end display_control;
 
@@ -59,6 +59,14 @@ architecture Behavioral of display_control is
     -- Pomocný vektor tlaèítka
     signal Buttons  : std_logic_vector(12 - 1 downto 0);
     -- 
+    signal internal_Display_1 : std_logic_vector(4 - 1 downto 0);
+    signal internal_Display_2 : std_logic_vector(4 - 1 downto 0);
+    signal internal_Display_3 : std_logic_vector(4 - 1 downto 0);
+    signal internal_Display_4 : std_logic_vector(4 - 1 downto 0);
+    signal internal_Passcode_1   : std_logic_vector(4 - 1 downto 0);
+    signal internal_Passcode_2   : std_logic_vector(4 - 1 downto 0);
+    signal internal_Passcode_3   : std_logic_vector(4 - 1 downto 0);
+    signal internal_Passcode_4   : std_logic_vector(4 - 1 downto 0);
     signal cnt : natural;
     signal set_password : boolean;
     signal display_time : natural;
@@ -84,27 +92,39 @@ begin
         end if;
     end if;
     if(rising_edge(Button_SET)) then
-            if (Passcode_1 ="UUUU") then
-                Passcode_1 <= Display_1;
-                Passcode_2 <= Display_2;
-                Passcode_3 <= Display_3;
-                Passcode_4 <= Display_4;
+            if (internal_Passcode_1 ="UUUU") then
+                Passcode_1 <= internal_Display_1;
+                Passcode_2 <= internal_Display_2;
+                Passcode_3 <= internal_Display_3;
+                Passcode_4 <= internal_Display_4;
+                internal_Passcode_1 <= internal_Display_1;
+                internal_Passcode_2 <= internal_Display_2;
+                internal_Passcode_3 <= internal_Display_3;
+                internal_Passcode_4 <= internal_Display_4;
             else
-            if (Display_1 = Passcode_1 and Display_2 = Passcode_2 and Display_3 = Passcode_3 and Display_4 = Passcode_4) then
+            if (internal_Display_1 = internal_Passcode_1 and internal_Display_2 = internal_Passcode_2 and internal_Display_3 = internal_Passcode_3 and internal_Display_4 = internal_Passcode_4) then
                 --Vynulování displaye pøed nastavením nového hesla
                 Display_1 <="0000";
                 Display_2 <="0000";
                 Display_3 <="0000";
                 Display_4 <="0000";
+                internal_Display_1<="0000";
+                internal_Display_2<="0000";
+                internal_Display_3<="0000";
+                internal_Display_4<="0000";
                 cnt<=0;
                 --nastavení nového hesla
                 set_password<=true;
             else
             if (set_password=true) then
-                Passcode_1 <= Display_1;
-                Passcode_2 <= Display_2;
-                Passcode_3 <= Display_3;
-                Passcode_4 <= Display_4;
+                Passcode_1 <= internal_Display_1;
+                Passcode_2 <= internal_Display_2;
+                Passcode_3 <= internal_Display_3;
+                Passcode_4 <= internal_Display_4;
+                internal_Passcode_1 <= internal_Display_1;
+                internal_Passcode_2 <= internal_Display_2;
+                internal_Passcode_3 <= internal_Display_3;
+                internal_Passcode_4 <= internal_Display_4;
                 set_password<=false;
             end if;
             end if;
@@ -115,120 +135,160 @@ begin
             case cnt is
                 when 1 =>
                     Display_1<="0000";
+                    internal_Display_1<="0000";
                 when 2 =>
                     Display_2<="0000";
+                    internal_Display_2<="0000";
                 when 3 =>
                     Display_3<="0000";
+                    internal_Display_3<="0000";
                 when 4 =>
                     Display_4<="0000";
+                    internal_Display_4<="0000";
                 when others =>    
             end case;
         when "000000000010" => --1
             case cnt is
                 when 1 =>
                     Display_1<="0001";
+                    internal_Display_1<="0001";
                 when 2 =>
                     Display_2<="0001";
+                    internal_Display_2<="0001";
                 when 3 =>
                     Display_3<="0001";
+                    internal_Display_3<="0001";
                 when 4 =>
                     Display_4<="0001";
+                    internal_Display_4<="0001";
                     when others =>   
             end case;   
         when "000000000100" =>
             case cnt is
                 when 1 =>
                     Display_1<="0010";
+                    internal_Display_1<="0010";
                 when 2 =>
                     Display_2<="0010";
+                    internal_Display_2<="0010";
                 when 3 =>
                     Display_3<="0010";
+                    internal_Display_3<="0010";
                 when 4 =>
                     Display_4<="0010";
+                    internal_Display_4<="0010";
                     when others =>   
             end case;   
         when "000000001000" =>
             case cnt is
                 when 1 =>
                     Display_1<="0011";
+                    internal_Display_1<="0011";
                 when 2 =>
                     Display_2<="0011";
+                    internal_Display_2<="0011";
                 when 3 =>
                     Display_3<="0011";
+                    internal_Display_3<="0011";
                 when 4 =>
                     Display_4<="0011";
+                    internal_Display_4<="0011";
                     when others =>   
             end case;   
         when "000000010000" =>
             case cnt is
                 when 1 =>
                     Display_1<="0100";
+                    internal_Display_1<="0100";
                 when 2 =>
                     Display_2<="0100";
+                    internal_Display_2<="0100";
                 when 3 =>
                     Display_3<="0100";
+                    internal_Display_3<="0100";
                 when 4 =>
                     Display_4<="0100";
+                    internal_Display_4<="0100";
                     when others =>   
             end case;   
         when "000000100000" =>
             case cnt is
                 when 1 =>
                     Display_1<="0101";
+                    internal_Display_1<="0101";
                 when 2 =>
                     Display_2<="0101";
+                    internal_Display_2<="0101";
                 when 3 =>
                     Display_3<="0101";
+                    internal_Display_3<="0101";
                 when 4 =>
                     Display_4<="0101";
+                    internal_Display_4<="0101";
                     when others =>   
             end case;   
         when "000001000000" =>
             case cnt is
                 when 1 =>
                     Display_1<="0110";
+                    internal_Display_1<="0110";
                 when 2 =>
                     Display_2<="0110";
+                    internal_Display_2<="0110";
                 when 3 =>
                     Display_3<="0110";
+                    internal_Display_3<="0110";
                 when 4 =>
                     Display_4<="0110";
+                    internal_Display_4<="0110";
                     when others =>   
             end case;   
         when "000010000000" =>
             case cnt is
                 when 1 =>
                     Display_1<="0111";
+                    internal_Display_1<="0111";
                 when 2 =>
                     Display_2<="0111";
+                    internal_Display_2<="0111";
                 when 3 =>
                     Display_3<="0111";
+                    internal_Display_3<="0111";
                 when 4 =>
                     Display_4<="0111";
+                    internal_Display_4<="0111";
                     when others =>   
             end case;   
         when "000100000000" =>
             case cnt is
                 when 1 =>
                     Display_1<="1000";
+                    internal_Display_1<="1000";
                 when 2 =>
                     Display_2<="1000";
+                    internal_Display_2<="1000";
                 when 3 =>
                     Display_3<="1000";
+                    internal_Display_3<="1000";
                 when 4 =>
                     Display_4<="1000";
+                    internal_Display_4<="1000";
                     when others =>   
             end case;   
         when "001000000000" =>
             case cnt is
                 when 1 =>
                     Display_1<="1001";
+                    internal_Display_1<="1001";
                 when 2 =>
                     Display_2<="1001";
+                    internal_Display_2<="1001";
                 when 3 =>
                     Display_3<="1001";
+                    internal_Display_3<="1001";
                 when 4 =>
                     Display_4<="1001";
+                    internal_Display_4<="1001";
                     when others =>   
             end case;   
         when "010000000000" =>      --RESET
@@ -236,6 +296,10 @@ begin
             Display_2<="0000";
             Display_3<="0000";
             Display_4<="0000";
+            internal_Display_1<="0000";
+            internal_Display_2<="0000";
+            internal_Display_3<="0000";
+            internal_Display_4<="0000";
             cnt<=0;
             
         when others =>   
@@ -252,6 +316,10 @@ begin
         Display_2<="0000";
         Display_3<="0000";
         Display_4<="0000";
+        internal_Display_1<="0000";
+        internal_Display_2<="0000";
+        internal_Display_3<="0000";
+        internal_Display_4<="0000";
         cnt<=0;
         display_time<=0;
     end if;   
