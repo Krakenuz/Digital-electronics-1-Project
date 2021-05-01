@@ -32,8 +32,8 @@ Write your text here.
 #### Diskusia
 Podarilo sa nám vytvoriť funkčný zámok dverí na pin ....
 
-### Video
+#### Video
 *Vložiť video*
 
-### Referencie
+#### Referencie
 
