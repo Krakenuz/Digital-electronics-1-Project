@@ -10,6 +10,8 @@ Door lock system with PIN (4-digit) terminal, 4x3 push buttons, 4-digit 7-segmen
 
 ### Popis projektu
 Vytvorili sme projekt, ktorý robí...
+Pri tvorení sme použili modul z cvičenia ...
+
 
 ### Vylepšenia
 Pridali sme vylepšenia ...
@@ -24,6 +26,9 @@ Write your text here.
 
 ### TOP module description and simulations
 Write your text here.
+
+#### Diskusia
+Podarilo sa nám vytvoriť funkčný zámok dverí na pin ....
 
 ### Video
 * Vložiť video *
