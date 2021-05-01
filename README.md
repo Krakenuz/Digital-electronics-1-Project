@@ -29,23 +29,39 @@ Obrázok schémy zapojenia projektu
 ### Stavový diagram ?
 
 ### VHDL moduly
-#### `relay_control`
-#### `hex_7seg`
-#### `door_lock_system`
-#### `display_control`
+#### architektúra a porty `relay_control`
+```vhdl ```
+#### architektúra a porty `hex_7seg`
+```vhdl ```
+#### architektúra a porty `door_lock_system`
+```vhdl ```
+#### architektúra a porty `display_control`
+```vhdl ```
 
 ### TOP modul
-#### `top`
+#### architektúra a porty `top` modulu
+
+### Testbenche
+#### procesy z testbenchu `tb_display_control`
+```vhdl ```
+#### procesy z testbenchu `tb_door_lock_system`
+```vhdl ```
+#### procesy z testbenchu `tb_relay_control`
+```vhdl ```
 
 ### Screenshoty zo simulácii
 #### screesshot 1 
-*screenshot a popis*
+##### popis screenshotu 1
+![screenshot](/Images/scr1.png)
 #### screesshot 2
-*screenshot a popis*
+##### popis screenshotu 2
+![screenshot](/Images/scr2.png)
 #### screesshot 3
-*screenshot a popis*
+##### popis screenshotu 3
+![screenshot](/Images/scr2.png)
 #### ...
-*screenshot a popis*
+##### ...
+![screenshot](/Images/scr4.png)
 
 ### Diskusia
 Podarilo sa nám vytvoriť funkčný zámok dverí na pin ....
