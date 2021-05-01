@@ -10,6 +10,7 @@ Cielom projektu bolo vytvoriť systém ktorý nám umožní zamykanie a odomykan
 
 ## Popis hardwaru
 Základná doska :
+![doska](/Images/41933746684_2c911c8daa_b.jpg)
 
 
 Tlačítka :
