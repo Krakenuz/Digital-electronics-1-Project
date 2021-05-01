@@ -1,4 +1,4 @@
-# Systém zámku dverí
+# Systém zámku dveří
 
 ## Členové týmu
 Jurek Martin, Kadlec Jiří, Kislerová Helena, Kovaříková Hana, Kratochvil Tomáš.
