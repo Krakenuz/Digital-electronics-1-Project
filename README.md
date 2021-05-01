@@ -9,11 +9,37 @@ Jurek Martin, Kadlec Jiří, Kislerová Helena, Kovaříková Hana, Kratochvil T
 Cielom projektu bolo vytvoriť systém ktorý nám umožní zamykanie a odomykanie dverí pomocou 4 miestneho PIN kódu. V zadaní bolo uvedené, že pri vyhotovení tohoto projektu máme použiť 4x3 tlačítiek, styri 7-segmentové displaye a relé, ktorým budeme ovládať zámok dverí.
 
 ## Popis hardwaru
-Pri vytváraní systému zámku dverí sme použili :
-styri 7-segmentové displaye -
-relé -
-klávesnicu -
+Základná doska :
+Tlačítka :
+| vstup | Button |
+|  :-: | :-: | 
+| 000000000001 | 0 |
+| 000000000010 | 1 |
+| 000000000100 | 2 |
+| 000000001000 | 3 |
+| 000000010000 | 4 |
+| 000000100000 | 5 |
+| 000001000000 | 6 |
+| 000010000000 | 7 |
+| 000100000000 | 8 |
+| 001000000000 | 9 |
+| 010000000000 | reset |
 
+Displaye :
+| vstup | Button |
+|  :-: | :-: | 
+| 0000 | 0 |
+| 0001 | 1 |
+| 0010 | 2 |
+| 0011 | 3 |
+| 0100 | 4 |
+| 0101 | 5 |
+| 0110 | 6 |
+| 0111 | 7 |
+| 1000 | 8 |
+| 1001 | 9 |
+
+Relé :
 
 ## Popis projektu
 Vytvorili sme projekt, ktorý robí...
