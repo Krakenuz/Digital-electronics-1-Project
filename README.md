@@ -28,7 +28,7 @@ Tlačítka :
 | 010000000000 | reset |
 
 Displaye :
-| vstup | Button |
+| vstup | display zobrazí|
 |  :-: | :-: | 
 | 0000 | 0 |
 | 0001 | 1 |
