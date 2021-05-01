@@ -6,14 +6,18 @@ Jurek Martin, Kadlec Jiří, Kislerová Helena, Kovaříková Hana, Kratochvil T
 [Link to your GitHub project folder](https://github.com/Krakenuz/Digital-electronics-1-Project)
 
 ## Zadanie projektu
-Door lock system with PIN (4-digit) terminal, 4x3 push buttons, 4-digit 7-segment display, relay for door lock control.
+Cielom projektu bolo vytvoriť systém ktorý nám umožní zamykanie a odomykanie dverí pomocou 4 miestneho PIN kódu. V zadaní bolo uvedené, že pri vyhotovení tohoto projektu máme použiť 4x3 tlačítiek, styri 7-segmentové displaye a relé, ktorým budeme ovládať zámok dverí.
 
 ## Popis hardwaru
-Pri vytváraní systému zámku dverí sme použili ... ktorý používame na ...
+Pri vytváraní systému zámku dverí sme použili :
+styri 7-segmentové displaye -
+relé -
+klávesnicu -
+
 
 ## Popis projektu
 Vytvorili sme projekt, ktorý robí...
-Pri tvorení sme použili modul z cvičenia ...
+Pri tvorení sme použili modul z cvičenia č. 4.
 
 ## Vylepšenia
 Pridali sme vylepšenia ...
@@ -21,7 +25,7 @@ Pridali sme vylepšenia ...
 Vylepšenia, ktoré by sa ešte dali pridať sú...
 
 ## Plošný spoj a jeho schéma
-Krátky popis k pločáku a schéma
+Krátky popis k plošáku a schéma
 
 ## Schéma zapojenia projektu
 Obrázok schémy zapojenia projektu
