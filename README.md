@@ -10,7 +10,7 @@ Cielom projektu bolo vytvoriť systém ktorý nám umožní zamykanie a odomykan
 
 ## Popis hardwaru
 #### Základná doska :
-Ako základnú dosku sme zvolili dosku Arty A7-100T, pretože ...
+Ako základnú dosku sme zvolili dosku Arty A7-100T, pretože ... Vyžili sme na nej porty ...
 
 ![doska](/Images/board.jpg)
 
