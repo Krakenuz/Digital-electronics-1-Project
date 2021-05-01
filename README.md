@@ -20,10 +20,18 @@ Pridali sme vylepšenia ...
 
 Vylepšenia, ktoré by sa ešte dali pridať sú...
 
-### VHDL modules description and simulations
+#### Plošný spoj a jeho schéma
+Krátky popis k pločáku a schéma
+
+#### Schéma zapojenia projektu
+Obrázok schémy zapojenia projektu
+
+#### Stavový diagram ?
+
+#### VHDL modules description and simulations
 Write your text here.
 
-### TOP module description and simulations
+#### TOP module description and simulations
 Write your text here.
 
 #### Screenshoty zo simulácii
