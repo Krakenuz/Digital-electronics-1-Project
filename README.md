@@ -20,28 +20,28 @@ Pridali sme vylepšenia ...
 
 Vylepšenia, ktoré by sa ešte dali pridať sú...
 
-#### Plošný spoj a jeho schéma
+### Plošný spoj a jeho schéma
 Krátky popis k pločáku a schéma
 
-#### Schéma zapojenia projektu
+### Schéma zapojenia projektu
 Obrázok schémy zapojenia projektu
 
-#### Stavový diagram ?
+### Stavový diagram ?
 
-#### VHDL modules description and simulations
+### VHDL modules description and simulations
 Write your text here.
 
-#### TOP module description and simulations
+### TOP module description and simulations
 Write your text here.
 
-#### Screenshoty zo simulácii
+### Screenshoty zo simulácii
 *screenshoty a popis k nim*
 
-#### Diskusia
+### Diskusia
 Podarilo sa nám vytvoriť funkčný zámok dverí na pin ....
 
-#### Video
+### Video
 *Vložiť video*
 
-#### Referencie
+### Referencie
 
