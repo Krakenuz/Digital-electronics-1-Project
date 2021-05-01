@@ -105,16 +105,16 @@ Obrázek schématu zapojení projektu
 
 ## Screenshoty ze simulací
 ### screenshot 1 
-#### popis screenshotu 1
+popis screenshotu 1
 ![screenshot](/Images/scr1.png)
 ### screenshot 2
-#### popis screenshotu 2
+popis screenshotu 2
 ![screenshot](/Images/scr2.png)
 ### screenshot 3
-#### popis screenshotu 3
-![screenshot](/Images/scr2.png)
+popis screenshotu 3
+![screenshot](/Images/scr3.png)
 ### ...
-#### ...
+popis screenshotu 4
 ![screenshot](/Images/scr4.png)
 
 ## Diskuze
