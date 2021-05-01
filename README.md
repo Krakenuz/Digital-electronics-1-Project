@@ -1,16 +1,16 @@
 # Systém zámku dverí
 
-## Členovia tímu
+## Členové týmu
 Jurek Martin, Kadlec Jiří, Kislerová Helena, Kovaříková Hana, Kratochvil Tomáš.
 
 [Link to your GitHub project folder](https://github.com/Krakenuz/Digital-electronics-1-Project)
 
-## Zadanie projektu
-Cielom projektu bolo vytvoriť systém ktorý nám umožní zamykanie a odomykanie dverí pomocou 4 miestneho PIN kódu. V zadaní bolo uvedené, že pri vyhotovení tohoto projektu máme použiť 4x3 tlačítiek, styri 7-segmentové displaye a relé, ktorým budeme ovládať zámok dverí.
+## Zadání projektu
+Cílem projektu bylo vytvořit systém, který nám umožní zamykání a odemykání dveří pomocí pomocí 4-místného PIN kódu. V zadání bylo uedené, že pří zpracování tohoto projektu máme použít 4x3tlačítek, čtyři 7-segmentové displaye a relé, kterým budeme ovládat zámek dveří. 
 
 ## Popis hardwaru
-#### Základná doska :
-Ako základnú dosku sme zvolili dosku Arty A7-100T, pretože ... Vyžili sme na nej porty ...
+#### Základní deska :
+Jako základní desku jsme zvolili Arty A7-100T, protože ...  Využili jsme na něj porty ...
 
 ![doska](/Images/board.jpg)
 
@@ -46,63 +46,68 @@ Ako základnú dosku sme zvolili dosku Arty A7-100T, pretože ... Vyžili sme na
 Relé :
 
 ## Popis projektu
-Vytvorili sme projekt, ktorý robí...
-Pri tvorení sme použili modul z cvičenia č. 4.
+Vytvořili jsme projekt, ktorý pracuje na...
+Při tvorbě jsme použili modul ze cvičení 4.
 
-## Vylepšenia
-Pridali sme vylepšenia ...
-
-Vylepšenia, ktoré by sa ešte dali pridať sú...
+## Vylepšení
+Přidali jsme vylepšení ...
+Vylepšení, které by se ještě daly přidat jsou ...
 
 ## Plošný spoj a jeho schéma
-Krátky popis k plošáku a schéma
+//Krátky popis k plošáku a schéma
 
-## Schéma zapojenia projektu
-Obrázok schémy zapojenia projektu
+## Schéma zapojení projektu
+Obrázek schématu zapojení projektu
 
-## Stavový diagram ?
+## Stavový diagram 
+...
 
 ## VHDL moduly
-### architektúra a porty `relay_control`
+### Architektura a porty `relay_control`
 ```vhdl 
 
 ```
-### architektúra a porty `hex_7seg`
+
+### Architektura a porty `hex_7seg`
 ```vhdl
 
 ```
-### architektúra a porty `door_lock_system`
+
+### Architektura a porty `door_lock_system`
 ```vhdl 
 
 ```
-### architektúra a porty `display_control`
+
+### Architektura a porty `display_control`
 
 ```vhdl
 
 ```
 
 ## TOP modul
-### architektúra a porty `top` modulu
+### Architektura a porty `top` modulu
 
 ## Testbenche
-### procesy z testbenchu `tb_display_control`
-```vhdl 
-
-```
-### procesy z testbenchu `tb_door_lock_system`
-```vhdl 
-
-```
-### procesy z testbenchu `tb_relay_control`
+### Procesy z testbenche `tb_display_control`
 ```vhdl 
 
 ```
 
-## Screenshoty zo simulácii
-### screesshot 1 
+### Procesy z testbenche `tb_door_lock_system`
+```vhdl 
+
+```
+
+### Procesy z testbenchu `tb_relay_control`
+```vhdl 
+
+```
+
+## Screenshoty ze simulací
+### screenshot 1 
 #### popis screenshotu 1
 ![screenshot](/Images/scr1.png)
-### screesshot 2
+### screenshot 2
 #### popis screenshotu 2
 ![screenshot](/Images/scr2.png)
 ### screesshot 3
@@ -112,11 +117,11 @@ Obrázok schémy zapojenia projektu
 #### ...
 ![screenshot](/Images/scr4.png)
 
-## Diskusia
-Podarilo sa nám vytvoriť funkčný zámok dverí na pin ....
+## Diskuze
+Podařilo se nám vytvořit funkční zámek na pin ...
 
 ## Video
-*Vložiť video*
+...
 
-## Referencie
+## Reference
 
