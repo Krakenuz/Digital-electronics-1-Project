@@ -47,7 +47,7 @@ Využili jsme na něj porty ...
 Relé :
 
 ## Popis projektu
-Vytvořili jsme projekt, ktorý pracuje na...
+Vytvořili jsme projekt, který pracuje na...
 Při tvorbě jsme použili modul ze cvičení 4.
 
 ## Vylepšení
@@ -61,7 +61,7 @@ Krátky popis k plošáku a schéma
 Obrázek schématu zapojení projektu
 
 ## Stavový diagram 
-...
+????
 
 ## VHDL moduly
 ### Architektura a porty `relay_control`
