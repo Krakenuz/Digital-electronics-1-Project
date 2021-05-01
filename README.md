@@ -113,7 +113,7 @@ popis screenshotu 2
 ### screenshot 3
 popis screenshotu 3
 ![screenshot](/Images/scr3.png)
-### ...
+### screenshot 4
 popis screenshotu 4
 ![screenshot](/Images/scr4.png)
 
