@@ -55,7 +55,7 @@ Přidali jsme vylepšení ...
 Vylepšení, které by se ještě daly přidat jsou ...
 
 ## Plošný spoj a jeho schéma
-``Krátky popis k plošáku a schéma
+Krátky popis k plošáku a schéma
 
 ## Schéma zapojení projektu
 Obrázek schématu zapojení projektu
@@ -105,13 +105,13 @@ Obrázek schématu zapojení projektu
 
 ## Screenshoty ze simulací
 ### screenshot 1 
-#### ``popis screenshotu 1
+#### popis screenshotu 1
 ![screenshot](/Images/scr1.png)
 ### screenshot 2
-#### ``popis screenshotu 2
+#### popis screenshotu 2
 ![screenshot](/Images/scr2.png)
 ### screenshot 3
-#### ``popis screenshotu 3
+#### popis screenshotu 3
 ![screenshot](/Images/scr2.png)
 ### ...
 #### ...
