@@ -27,13 +27,13 @@ Write your text here.
 Write your text here.
 
 #### Screenshoty zo simulácii
-* screenshoty a popis k nim *
+*screenshoty a popis k nim*
 
 #### Diskusia
 Podarilo sa nám vytvoriť funkčný zámok dverí na pin ....
 
 ### Video
-* Vložiť video *
+*Vložiť video*
 
 ### Referencie
 
