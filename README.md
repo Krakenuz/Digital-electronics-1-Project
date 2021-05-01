@@ -19,20 +19,14 @@ Vylepšenia, ktoré by sa ešte dali pridať sú...
 ### Popis hardwaru
 Pri vytváraní systému zámku dverí sme použili ... ktorý používame na ...
 
-
 ### VHDL modules description and simulations
 Write your text here.
-
 
 ### TOP module description and simulations
 Write your text here.
 
-
 ### Video
+* Vložiť video *
 
-*Write your text here*
+### Referencie
 
-
-### References
-
-   1. Write your text here.
