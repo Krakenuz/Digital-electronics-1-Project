@@ -28,14 +28,24 @@ Obrázok schémy zapojenia projektu
 
 ### Stavový diagram ?
 
-### VHDL modules description and simulations
-Write your text here.
+### VHDL moduly
+#### `relay_control`
+#### `hex_7seg`
+#### `door_lock_system`
+#### `display_control`
 
-### TOP module description and simulations
-Write your text here.
+### TOP modul
+#### `top`
 
 ### Screenshoty zo simulácii
-*screenshoty a popis k nim*
+#### screesshot 1 
+*screenshot a popis*
+#### screesshot 2
+*screenshot a popis*
+#### screesshot 3
+*screenshot a popis*
+#### ...
+*screenshot a popis*
 
 ### Diskusia
 Podarilo sa nám vytvoriť funkčný zámok dverí na pin ....
