@@ -1,7 +1,6 @@
 # Door lock system
 
-## členovia tímu
-
+## Členovia tímu
 Jurek Martin, Kadlec Jiří, Kislerová Helena, Kovaříková Hana, Kratochvil Tomáš.
 
 [Link to your GitHub project folder](https://github.com/Krakenuz/Digital-electronics-1-Project)
