@@ -12,7 +12,7 @@ Cielom projektu bolo vytvoriť systém ktorý nám umožní zamykanie a odomykan
 #### Základná doska :
 Ako základnú dosku sme zvolili dosku Arty A7-100T, pretože ...
 
-![doska](/Images/41933746684_2c911c8daa_b.jpg)
+![doska](/Images/board.jpg)
 
 #### Tlačítka :
 | vstup | Button |
