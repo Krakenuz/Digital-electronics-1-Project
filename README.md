@@ -10,7 +10,8 @@ Cílem projektu bylo vytvořit systém, který nám umožní zamykání a odemyk
 
 ## Popis hardwaru
 #### Základní deska :
-Jako základní desku jsme zvolili Arty A7-100T, protože ...  Využili jsme na něj porty ...
+Jako základní desku jsme zvolili Arty A7-100T, protože ...  
+Využili jsme na něj porty ...
 
 ![doska](/Images/board.jpg)
 
@@ -79,7 +80,6 @@ Obrázek schématu zapojení projektu
 ```
 
 ### Architektura a porty `display_control`
-
 ```vhdl
 
 ```
@@ -110,7 +110,7 @@ Obrázek schématu zapojení projektu
 ### screenshot 2
 #### popis screenshotu 2
 ![screenshot](/Images/scr2.png)
-### screesshot 3
+### screenshot 3
 #### popis screenshotu 3
 ![screenshot](/Images/scr2.png)
 ### ...
