@@ -10,6 +10,8 @@ Cielom projektu bolo vytvoriť systém ktorý nám umožní zamykanie a odomykan
 
 ## Popis hardwaru
 Základná doska :
+
+
 Tlačítka :
 | vstup | Button |
 |  :-: | :-: | 
