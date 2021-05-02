@@ -82,16 +82,13 @@ Relé :
 |  :-: | :-: | 
 | 0 | ROZEPNUTO |
 | 1 | SEPNUTO |
+
 ## Popis projektu
 Deska reaguje na stisknutí tlačítek. Při prvím stisknutí tlačítka se nastavuje číselná hodnota na první displej, při následujícím stisknutí se nastavuje hodnota na druhý displej a stejně tak u následujících dvou displejů. Pokud jsme se překlepli pří zadávání hesla, použijeme tlačítko RESET, které slouží k vynulování všech 4 displejů najednou.
 První nastavení hesla se provádí zadáním 4 číslic a následným stiskem tlačítka SET. Následně se změna hesla provádí takto: zadáme staré hesla na displej, stiskneme SET, zadáme nové heslo a následně stiskneme zase SET. Tímto jsme nastavili nové heslo. 
 Když se zadá 4 místné heslo na displej, tak se sepne relé (Odemknou dveře). 
 Další funkcí je automatické nulování displeje po časovém intervalu. Takže například po otevření dveří se displej automaticky za X sekund vynuluje.  
 Při tvorbě jsme použili modul HEX7SEG ze cvičení 4.
-
-## Vylepšení
-Přidali jsme vylepšení ...
-Vylepšení, které by se ještě daly přidat jsou ...
 
 ## Plošný spoj a jeho schéma
 
@@ -616,7 +613,7 @@ popis screenshotu 4
 ![screenshot](/Images/scr4.png)
 
 ## Diskuze
-Podařilo se nám vytvořit funkční zámek na pin ...
+Prejdenie od začiatku čo sme robili , zhrnutie krokov ktoré boli splnené, ktoré neboli splnené a prečo neboli splnené, zhodnotenie prečo sme to riešili tak ako sme riešili a prečo sme riešenie počas robenia projektu zmenili, vylepšenia a zhodnotenie
 
 ## Video
 ``odkaz na video
