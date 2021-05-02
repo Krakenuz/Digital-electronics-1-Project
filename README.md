@@ -10,7 +10,7 @@ Cílem projektu bylo vytvořit systém, který nám umožní zamykání a odemyk
 
 ## Popis hardwaru
 #### Základní deska :
-Jako základní desku jsme zvolili Arty A7-100T, protože ...  
+Jako základní desku jsme zvolili Arty A7-100T.  
 Využili jsme na něj porty ck_io0-ck_io11 ako vstup a porty ja0-ja6, jb0-jb6, jc0-jc6, jd0-jd6 a ck_io12 ako výstup.
 
 ![deska](/Images/board.jpg)
@@ -45,8 +45,6 @@ Využili jsme na něj porty ck_io0-ck_io11 ako vstup a porty ja0-ja6, jb0-jb6, j
 | relay_0 | ck_io12 |
 
 </td></tr> </table>
-
-
 
 #### Tlačítka :
 | vstup | Button |
@@ -99,9 +97,6 @@ Při tvorbě jsme použili modul HEX7SEG ze cvičení 4.
 
 ## Schéma zapojení modulov
 ![schema_modul](/Images/modul_schema_opravene.png)
-
-## Stavový diagram 
-????
 
 ## VHDL moduly
 ### Princip `relay_control`
@@ -616,7 +611,7 @@ popis screenshotu 4
 Prejdenie od začiatku čo sme robili , zhrnutie krokov ktoré boli splnené, ktoré neboli splnené a prečo neboli splnené, zhodnotenie prečo sme to riešili tak ako sme riešili a prečo sme riešenie počas robenia projektu zmenili, vylepšenia a zhodnotenie
 
 ## Video
-``odkaz na video
+odkaz na video
 
 ## Reference
 
