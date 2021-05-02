@@ -11,7 +11,7 @@ Cílem projektu bylo vytvořit systém, který nám umožní zamykání a odemyk
 ## Popis hardwaru
 #### Základní deska :
 Jako základní desku jsme zvolili Arty A7-100T, protože ...  
-Využili jsme na něj porty ...
+Využili jsme na něj porty ck_io0-ck_io11 ako vstup a porty ja0-ja6, jb0-jb6, jc0-jc6, jd0-jd6 a ck_io12 ako výstup.
 
 ![deska](/Images/board.jpg)
 
