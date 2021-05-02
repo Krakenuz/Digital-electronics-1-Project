@@ -600,21 +600,6 @@ begin
 ## TOP modul
 ### Architektura a porty `top` modulu
 Tabulka pinu
-## Testbenche
-### Procesy z testbenche `tb_display_control`
-```vhdl 
-
-```
-
-### Procesy z testbenche `tb_door_lock_system`
-```vhdl 
-
-```
-
-### Procesy z testbenche `tb_relay_control`
-```vhdl 
-
-```
 
 ## Screenshoty ze simulací
 ### screenshot 1 
