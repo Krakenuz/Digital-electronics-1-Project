@@ -21,18 +21,18 @@ Využili jsme na něj porty ck_io0-ck_io11 ako vstup a porty ja0-ja6, jb0-jb6, j
 
 | TOP vstup | porty |
 |  :-: | :-: | 
-| ck_io0 | Button_0 |
-| ck_io1 | Button_1 |
-| ck_io2 | Button_2 |
-| ck_io3 | Button_3 |
-| ck_io4 | Button_4 |
-| ck_io5 | Button_5 |
-| ck_io6 | Button_6 |
-| ck_io7 | Button_7 |
-| ck_io8 | Button_8 |
-| ck_io9 | Button_9 |
-| ck_io10 | Button_reset |
-| ck_io11 | Button_set |
+| ck_io0 | button_0_i |
+| ck_io1 | button_1_i |
+| ck_io2 | button_2_i |
+| ck_io3 | button_3_i |
+| ck_io4 | button_4_i |
+| ck_io5 | button_5_i |
+| ck_io6 | button_6_i |
+| ck_io7 | button_7_i |
+| ck_io8 | button_8_i |
+| ck_io9 | button_9_i |
+| ck_io10 | button_reset |
+| ck_io11 | button_set |
 
 </td><td>
   
@@ -49,20 +49,20 @@ Využili jsme na něj porty ck_io0-ck_io11 ako vstup a porty ja0-ja6, jb0-jb6, j
 #### Tlačítka :
 | vstup | Button |
 |  :-: | :-: | 
-| 000000000001 | Button_0 |
-| 000000000010 | Button_1 |
-| 000000000100 | Button_2 |
-| 000000001000 | Button_3 |
-| 000000010000 | Button_4 |
-| 000000100000 | Button_5 |
-| 000001000000 | Button_6 |
-| 000010000000 | Button_7 |
-| 000100000000 | Button_8 |
-| 001000000000 | Button_9 |
-| 010000000000 | Button_reset |
+| 000000000001 | button_0_i |
+| 000000000010 | button_1_i |
+| 000000000100 | button_2_i |
+| 000000001000 | button_3_i |
+| 000000010000 | button_4_i |
+| 000000100000 | button_5_i |
+| 000001000000 | button_6_i |
+| 000010000000 | button_7_i |
+| 000100000000 | button_8_i |
+| 001000000000 | button_9_i |
+| 010000000000 | button_reset_i |
 
 #### Displaye (hex_7seg) :
-| vstup | display zobrazí|
+| vstup | display zobrazí |
 |  :-: | :-: | 
 | 0000 | 0 |
 | 0001 | 1 |
