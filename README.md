@@ -6,7 +6,7 @@ Jurek Martin, Kadlec Jiří, Kislerová Helena, Kovaříková Hana, Kratochvil T
 [Link to your GitHub project folder](https://github.com/Krakenuz/Digital-electronics-1-Project)
 
 ## Zadání projektu
-Cílem projektu bylo vytvořit systém, který nám umožní zamykání a odemykání dveří pomocí pomocí 4-místného PIN kódu. V zadání bylo uedené, že pří zpracování tohoto projektu máme použít 4x3tlačítek, čtyři 7-segmentové displaye a relé, kterým budeme ovládat zámek dveří. 
+Cílem projektu bylo vytvořit systém, který nám umožní zamykání a odemykání dveří pomocí pomocí 4-místného PIN kódu. V zadání bylo uedené, že pří zpracování tohoto projektu máme použít 4x3 tlačítek, čtyři 7-segmentové displaye a relé, kterým budeme ovládat zámek dveří. 
 
 ## Popis hardwaru
 #### Základní deska :
