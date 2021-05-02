@@ -11,9 +11,32 @@ Cílem projektu bylo vytvořit systém, který nám umožní zamykání a odemyk
 ## Popis hardwaru
 #### Základní deska :
 Jako základní desku jsme zvolili Arty A7-100T, protože ...  
-Využili jsme na něj porty ...
+Využili jsme na něj porty ck_io0-ck_io12 ako vstup a porty ja0-ja6, jb0-jb6, jc0-jc6, jd0-jd6 ako výstup.
 
 ![doska](/Images/board.jpg)
+
+#### Tabulka vstupov :
+| TOP vstup | porty |
+|  :-: | :-: | 
+| ck_io0 | Button_0 |
+| ck_io1 | Button_1 |
+| ck_io2 | Button_2 |
+| ck_io3 | Button_3 |
+| ck_io4 | Button_4 |
+| ck_io5 | Button_5 |
+| ck_io6 | Button_6 |
+| ck_io7 | Button_7 |
+| ck_io8 | Button_8 |
+| ck_io9 | Button_9 |
+| ck_io10 | Button_reset |
+| ck_io11 | Button_set |
+| ck_io11 | relay_0 |
+
+#### Tabulka výstupov :
+| seg_o | Button_0 |
+| seg_2_o | Button_1 |
+| seg_3_o | Button_2 |
+| seg_4_o | Button_3 |
 
 #### Tlačítka :
 | vstup | Button |
