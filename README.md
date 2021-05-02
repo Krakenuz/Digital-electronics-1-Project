@@ -96,7 +96,7 @@ Při tvorbě jsme použili modul HEX7SEG ze cvičení 4.
 
 
 ## Schéma zapojení modulov
-![schema_modul](/Images/ok_schema.png)
+![schema_modul](/Images/finally_ok_schema.png)
 
 ## VHDL moduly
 ### Princip `relay_control`
