@@ -15,7 +15,10 @@ Využili jsme na něj porty ck_io0-ck_io11 ako vstup a porty ja0-ja6, jb0-jb6, j
 
 ![deska](/Images/board.jpg)
 
-#### Tabulka vstupov :
+<table>
+<tr><th> VSTUPY </th><th> VYSTUPY </th></tr>
+<tr><td>
+
 | TOP vstup | porty |
 |  :-: | :-: | 
 | ck_io0 | Button_0 |
@@ -31,7 +34,8 @@ Využili jsme na něj porty ck_io0-ck_io11 ako vstup a porty ja0-ja6, jb0-jb6, j
 | ck_io10 | Button_reset |
 | ck_io11 | Button_set |
 
-#### Tabulka výstupov :
+</td><td>
+  
 | porty | TOP výstup |
 |  :-: | :-: | 
 | seg_o | ja|
@@ -39,6 +43,10 @@ Využili jsme na něj porty ck_io0-ck_io11 ako vstup a porty ja0-ja6, jb0-jb6, j
 | seg_3_o | jc |
 | seg_4_o | jd|
 | relay_0 | ck_io12 |
+
+</td></tr> </table>
+
+
 
 #### Tlačítka :
 | vstup | Button |
