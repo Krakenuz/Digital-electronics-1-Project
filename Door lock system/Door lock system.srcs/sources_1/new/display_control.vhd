@@ -378,18 +378,10 @@ begin
         when others =>   
         
     end case;
-    if (rising_edge(clk) and cnt=4) then
+    if (rising_edge(clk) and cnt>0) then
         display_time <=display_time+10;
     end if;
-    if (rising_edge(clk) and cnt=3) then
-        display_time <=display_time+10;
-    end if;
-    if (rising_edge(clk) and cnt=2) then
-        display_time <=display_time+10;
-    end if;
-    if (rising_edge(clk) and cnt=1) then
-        display_time <=display_time+10;
-    end if;
+    
     if(cnt=0) then
         display_time <=0;
     end if;
@@ -406,10 +398,9 @@ begin
         reset_disp<='1';
         display_time<=0;
     end if;   
-    --if (cnt >=4) then         --Pøepisovat èíslice bez resetu
-      --     cnt<=0;
-    --end if;
+
     --Relay Control
+    --Sepne relé, kdy se èíslice na displeji = heslu.
     if (internal2_Display_1 = internal2_Passcode_1 and internal2_Display_2 = internal2_Passcode_2 and internal2_Display_3 = internal2_Passcode_3 and internal2_Display_4 = internal2_Passcode_4) then
                Relay_o <= '1';
             else
