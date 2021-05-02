@@ -89,6 +89,7 @@ Další funkcí je automatické nulování displeje po časovém intervalu. Tak�
 Při tvorbě jsme použili modul HEX7SEG ze cvičení 4.
 
 ## Plošný spoj a jeho schéma
++ popísať plošný spoj, niečo k nemu
 
 ![schema_pcb](/Images/PCB_Schema.png)
 
