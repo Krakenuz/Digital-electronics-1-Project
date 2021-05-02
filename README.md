@@ -608,7 +608,11 @@ popis screenshotu 4
 ![screenshot](/Images/scr4.png)
 
 ## Diskuze
-Prejdenie od začiatku čo sme robili , zhrnutie krokov ktoré boli splnené, ktoré neboli splnené a prečo neboli splnené, zhodnotenie prečo sme to riešili tak ako sme riešili a prečo sme riešenie počas robenia projektu zmenili, vylepšenia a zhodnotenie
++ Podarilo sa nám úspešne vytvoriť systém zamykania dverí pomocou 4 miestneho pinu
++ Ako bonus sme pridali že vieme daný 4 miestny PIN nastaviť
++ Splnili sme všetky zadané kroky až na to že sa nám nepodarilo spraviť daný kód 100% podla zadaných VHDL Guidelines, pretože sme použili rising edge na tlačitka, nenapadlo nás iné riešenie a preto sme to spravili pomocou neho
++ počas riešenia kódu sme pri na konci narazili na problém, ktorým bolo že sa nám nedal vygenerovať bitstream, problém spôsobovalo že sme viacej entít, vyriešili sme to tak že sme všetko dali do jedného VHDL súboru
+++ keby ta napadli ešte nejake problémy a riešenia bolo by to super :D 
 
 ## Video
 odkaz na video
