@@ -33,6 +33,8 @@ Využili jsme na něj porty ck_io0-ck_io12 ako vstup a porty ja0-ja6, jb0-jb6, j
 | ck_io11 | relay_0 |
 
 #### Tabulka výstupov :
+| porty | TOP výstup |
+|  :-: | :-: | 
 | seg_o | Button_0 |
 | seg_2_o | Button_1 |
 | seg_3_o | Button_2 |
@@ -66,8 +68,6 @@ Využili jsme na něj porty ck_io0-ck_io12 ako vstup a porty ja0-ja6, jb0-jb6, j
 | 0111 | 7 |
 | 1000 | 8 |
 | 1001 | 9 |
-
-Relé :
 
 ## Popis projektu
 Vytvořili jsme projekt, který pracuje na...
