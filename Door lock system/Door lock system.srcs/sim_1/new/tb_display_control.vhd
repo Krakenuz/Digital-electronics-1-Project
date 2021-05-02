@@ -58,6 +58,12 @@ architecture testbench of tb_display_control is
     signal s_Passcode_2 :  std_logic_vector(4 - 1 downto 0);
     signal s_Passcode_3 :  std_logic_vector(4 - 1 downto 0);
     signal s_Passcode_4 :  std_logic_vector(4 - 1 downto 0);
+    signal s_Relay_o      : STD_LOGIC;
+    signal s_seg_o :std_logic_vector(7 - 1 downto 0);
+    signal s_seg_2_o :std_logic_vector(7 - 1 downto 0);
+    signal s_seg_3_o :std_logic_vector(7 - 1 downto 0);
+    signal s_seg_4_o :std_logic_vector(7 - 1 downto 0);
+
 
 begin
 	uut_display_control : entity work.display_control
@@ -82,7 +88,13 @@ begin
            Passcode_1   => s_Passcode_1,
            Passcode_2   => s_Passcode_2,
            Passcode_3   => s_Passcode_3,
-           Passcode_4   => s_Passcode_4);
+           Passcode_4   => s_Passcode_4,
+           Relay_o      => s_Relay_o,
+           seg_o        => s_seg_o,
+           seg_2_o      => s_seg_2_o,
+           seg_3_o      => s_seg_3_o,
+           seg_4_o      => s_seg_4_o
+           );
 --------------------------------------------------------------------
     -- Clock generation process
     --------------------------------------------------------------------

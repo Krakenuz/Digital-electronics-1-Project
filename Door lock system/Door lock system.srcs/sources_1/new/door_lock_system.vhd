@@ -58,6 +58,7 @@ architecture Behavioral of door_lock_system is
     signal internal_Display_2 : std_logic_vector(4 - 1 downto 0);
     signal internal_Display_3 : std_logic_vector(4 - 1 downto 0);
     signal internal_Display_4 : std_logic_vector(4 - 1 downto 0);
+    
     signal internal_Passcode_1   : std_logic_vector(4 - 1 downto 0);
     signal internal_Passcode_2   : std_logic_vector(4 - 1 downto 0);
     signal internal_Passcode_3   : std_logic_vector(4 - 1 downto 0);
@@ -85,32 +86,37 @@ begin
            Passcode_2=>internal_Passcode_2,
            Passcode_3=>internal_Passcode_3,
            Passcode_4=>internal_Passcode_4,
+           Relay_o=>Relay_o,
+           seg_o=>seg_o,
+           seg_2_o=>seg_2_o,
+           seg_3_o=>seg_3_o,
+           seg_4_o=>seg_4_o,
            clk=>clk
         );
         
-        relay_cnt: entity work.relay_control
-            port map (
-                Passcode_1=>internal_Passcode_1,
-                Passcode_2=>internal_Passcode_2,
-                Passcode_3=>internal_Passcode_3,
-                Passcode_4=>internal_Passcode_4,
-                Display_1=>internal_Display_1,
-                Display_2=>internal_Display_2,
-                Display_3=>internal_Display_3,
-                Display_4=>internal_Display_4,
-                Relay_o=>Relay_o
-            ); 
+        --relay_cnt: entity work.relay_control
+            --port map (
+                --Passcode_1=>internal_Passcode_1,
+                --Passcode_2=>internal_Passcode_2,
+                --Passcode_3=>internal_Passcode_3,
+                --Passcode_4=>internal_Passcode_4,
+                --Display_1=>internal2_Display_1,
+                --Display_2=>internal2_Display_2,
+                --Display_3=>internal2_Display_3,
+                --Display_4=>internal2_Display_4,
+                --Relay_o=>Relay_o
+           -- ); 
         
-        hex_7seg: entity work.hex_7seg
-            port map(
-                hex_i=>internal_Display_1,
-                hex_2_i=>internal_Display_2,
-                hex_3_i=>internal_Display_3,
-                hex_4_i=>internal_Display_4,
-                seg_o=>seg_o,
-                seg_2_o=>seg_2_o,
-                seg_3_o=>seg_3_o,
-                seg_4_o=>seg_4_o
-            );    
-
+        --hex_7seg: entity work.hex_7seg
+          --  port map(
+            --    hex_i=>internal3_Display_1,
+              --  hex_2_i=>internal3_Display_2,
+              --  hex_3_i=>internal3_Display_3,
+               -- hex_4_i=>internal3_Display_4,
+               -- seg_o=>seg_o,
+               -- seg_2_o=>seg_2_o,
+               -- seg_3_o=>seg_3_o,
+               -- seg_4_o=>seg_4_o
+           -- );    
+    
 end Behavioral;
