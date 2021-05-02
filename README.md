@@ -61,7 +61,11 @@ Přidali jsme vylepšení ...
 Vylepšení, které by se ještě daly přidat jsou ...
 
 ## Plošný spoj a jeho schéma
-Krátky popis k plošáku a schéma
+
+![schema_pcb](/Images/PCB_Schema.png)
+
+![deska_pcb](/Images/PCB_Deska.png)
+
 
 ## Schéma zapojení modulov
 ![schema_modul](/Images/modul_schema_opravene.png)
