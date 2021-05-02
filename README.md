@@ -63,8 +63,8 @@ Vylepšení, které by se ještě daly přidat jsou ...
 ## Plošný spoj a jeho schéma
 Krátky popis k plošáku a schéma
 
-## Schéma zapojení projektu
-Obrázek schématu zapojení projektu
+## Schéma zapojení modulov
+![schema_modul](/Images/modul_schema_opravene.png)
 
 ## Stavový diagram 
 ????
