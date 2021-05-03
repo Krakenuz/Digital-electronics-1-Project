@@ -3,14 +3,14 @@
 ## Členové týmu
 Jurek Martin, Kadlec Jiří, Kislerová Helena, Kovaříková Hana, Kratochvil Tomáš.
 
-[Link to your GitHub project folder](https://github.com/Krakenuz/Digital-electronics-1-Project)
+[https://github.com/Krakenuz/Digital-electronics-1-Project](https://github.com/Krakenuz/Digital-electronics-1-Project)
 
 ## Zadání projektu
 Cílem projektu bylo vytvořit systém, který nám umožní zamykání a odemykání dveří pomocí pomocí 4-místného PIN kódu. V zadání bylo uvedené, že při zpracování tohoto projektu máme použít 4x3 tlačítek, čtyři 7-segmentové displaye a relé, kterým budeme ovládat zámek dveří. 
 
 ## Popis hardwaru
-#### Základní deska :
-Jako základní desku jsme zvolili Arty A7-100T.  
+#### Vývojová deska :
+Jako vývojovou desku jsme zvolili Arty A7-100T.  
 Využili jsme porty ck_io0-ck_io11 jako vstup a porty ja0-ja6, jb0-jb6, jc0-jc6, jd0-jd6 a ck_io12 jako výstup.
 
 ![deska](/Images/board.jpg)
@@ -31,8 +31,8 @@ Využili jsme porty ck_io0-ck_io11 jako vstup a porty ja0-ja6, jb0-jb6, jc0-jc6,
 | ck_io7 | button_7_i |
 | ck_io8 | button_8_i |
 | ck_io9 | button_9_i |
-| ck_io10 | button_reset |
-| ck_io11 | button_set |
+| ck_io10 | button_reset_i |
+| ck_io11 | button_set_i |
 
 </td><td>
   
@@ -60,6 +60,7 @@ Využili jsme porty ck_io0-ck_io11 jako vstup a porty ja0-ja6, jb0-jb6, jc0-jc6,
 | 000100000000 | button_8_i |
 | 001000000000 | button_9_i |
 | 010000000000 | button_reset_i |
+| 100000000000 | button_set_i |
 
 #### Displaye (hex_7seg) :
 | vstup | display zobrazí |
@@ -101,6 +102,7 @@ Pro tento projekt bylo zapotřebí použít prvky, kterými samotná vývojová 
 
 ## VHDL moduly
 ### Princip `relay_control`
+Tento modul slouží k ověření zadaného hesla pomocí tlačítek na displej. Pokud zastavené heslo souhlasí, sepne se relé a otevře se zámek.
 ```vhdl 
 	--Relay Control
     --Activates the relay if displayed numbers on numbers = PASSCODE
@@ -112,6 +114,7 @@ Pro tento projekt bylo zapotřebí použít prvky, kterými samotná vývojová 
 ```
 
 ### Princip `hex_7seg`
+Modul hex_7seg je rozšířená verze modulu stejného jména, jež byl součástí několika laboratorních cvičení, viz reference. Slouží k překladu čtyřbitového binárního kódu na sedmibitový binární kód, jehož jedničky představují sepnuté segmenty displeje.
 ```vhdl
 	-- Translates binary signal (0000 = number 0) to input for 7segment display   
 	case s_internal2_Display_1 is
@@ -261,6 +264,7 @@ Pro tento projekt bylo zapotřebí použít prvky, kterými samotná vývojová 
 ```
 
 ### Princip `display_control`
+Modul display_control představuje hlavní část programu. Vstupují do něj tlačítka, kterým je v tomto modulu přiřazena 4 bitová hodnota zobrazovaného znaku na displeji. Při každém zmáčknutí tlačítka se zvyšuje hodnota vnitřní proměnné s_cnt, pomocí čehož je dosaženo postupné zadávání hodnot do displejů 1-4. Při zmáčknutí tlačítka Button_RESET_i, nebo při uplynutí časového intervalu, při kterém jsou tlačítka neaktivní a displeje konstantní, se displeje vynulují. Pokud je zámek spuštěn poprvé, bez dříve nastaveného hesla, první zadání celého hesla na displej a následné potvrzení tlačítkem Button_SET_i heslo nastaví. Změna hesla může být provedena pouze tehdy, pokud zadáme správně aktiální heslo a následně ho potvrdíme tlačítkem Button_SET_i. Po každém nastavení se displej vynuluje.
 ```vhdl
 		
 	p_display_control: process(clk,Button_0_i,Button_1_i,Button_2_i,Button_3_i,Button_4_i,Button_5_i,Button_6_i,Button_7_i,Button_8_i,Button_9_i,Button_RESET_i,Button_SET_i,s_cnt,s_Buttons,display_time,s_reset_cnt)
@@ -590,7 +594,60 @@ begin
     end if; 
 ```
 
+### Porty `top` modulu
+Každý sedmisegmentový displej je připojen na vlastní pmod konektor. Tlačítka a relé jsou připojeny přes univerzální input/output piny (původně určené pro Arduino shield). Je zde také přiveden zdroj hodin, pro vynulování displejů v display_control, viz. výše.
+```vhdl
+architecture Behavioral of top is
 
+begin
+    door_lock_system: entity work.door_lock_system
+    port map(
+        clk =>CLK100MHZ,
+        button_0_i =>ck_io0,
+        button_1_i =>ck_io1,
+        button_2_i =>ck_io2,
+        button_3_i =>ck_io3,
+        button_4_i =>ck_io4,
+        button_5_i =>ck_io5,
+        button_6_i =>ck_io6,
+        button_7_i =>ck_io7,
+        button_8_i =>ck_io8,
+        button_9_i =>ck_io9,
+        button_reset_i =>ck_io10,
+        button_set_i =>ck_io11,
+        relay_o =>ck_io12,
+        seg_o(0) =>ja(0),
+        seg_o(1) =>ja(1),
+        seg_o(2) =>ja(2),
+        seg_o(3) =>ja(3),
+        seg_o(4) =>ja(4),
+        seg_o(5) =>ja(5),
+        seg_o(6) =>ja(6),
+        seg_2_o(0) =>jb(0),
+        seg_2_o(1) =>jb(1),
+        seg_2_o(2) =>jb(2),
+        seg_2_o(3) =>jb(3),
+        seg_2_o(4) =>jb(4),
+        seg_2_o(5) =>jb(5),
+        seg_2_o(6) =>jb(6),
+        seg_3_o(0) =>jc(0),
+        seg_3_o(1) =>jc(1),
+        seg_3_o(2) =>jc(2),
+        seg_3_o(3) =>jc(3),
+        seg_3_o(4) =>jc(4),
+        seg_3_o(5) =>jc(5),
+        seg_3_o(6) =>jc(6),
+        seg_4_o(0) =>jd(0),
+        seg_4_o(1) =>jd(1),
+        seg_4_o(2) =>jd(2),
+        seg_4_o(3) =>jd(3),
+        seg_4_o(4) =>jd(4),
+        seg_4_o(5) =>jd(5),
+        seg_4_o(6) =>jd(6)
+    );
+
+end Behavioral;
+```
 
 ## Screenshoty ze simulací
 ### Simulace display_control
@@ -605,13 +662,17 @@ begin
 
 ## Diskuze
 + Podařilo se nám úspěšně vytvořit systém zamykání dveří pomocí 4 místného pinu.
-+ Bonusová funkcionalita je možnost nastavení libovolné čtveřice číslic jako PIN kódu. 
++ Bonusové funkcionality jsou možnost nastavení libovolné čtveřice číslic jako PIN kódu, kód je také závislý na pořadí a při jeho zadávání nesmí vznikat příliš velká prodleva, stejně tak se po zadání PIN kódu automaticky displeje po daném časovém intervalu vynulují.
 + Všechny požadované úkoly byly splněny. 
 + Splnili jsme všechny zadané kroky, s vyjímkou vytvoření kódu 100% podle zadaných VHDL Gudielines, protože jsme použili rising edge na tlačítka. Jiný nápad, jak to vytvořit nás nenapadl. 
 + Na konci řešení jsme narazili na problém s vygenerováním bitstreamu, problém způsobovalo více entit, řešení spočívalo ve spojení všech do jednoho VHDL souboru
++ Projekt by se dal vylepšit například přidáním další notifikační funcionality v případě zadání správného, nebo naopak špatného PIN kódu, či při nastavování hesla atd. Tohle vylepšení bylo plánované, ale bohužel na něj nezbyl čas. Dalším vylepšením by mohlo být skrytí zadaného PIN kódu buď již postupně při jeho zadávání nebo vzápětí po otevření dveří.
 
 ## Video
 odkaz na video
 
 ## Reference
-
+- Referenční manuál použité vývojové desky Arty osazené s FPGA řady A7 od firmy Xilinx:
+[https://reference.digilentinc.com/reference/programmable-logic/arty-a7/reference-manual](https://reference.digilentinc.com/reference/programmable-logic/arty-a7/reference-manual)
+- Repozitář kurzu, jež obsahuje mimo jiné zadání projektu a obsah jednotlivých laboratorních cvičení, který byl částečně využitý při tvorbě projektu:
+[https://github.com/tomas-fryza/Digital-electronics-1](https://github.com/tomas-fryza/Digital-electronics-1)
