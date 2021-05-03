@@ -6,12 +6,12 @@ Jurek Martin, Kadlec Jiří, Kislerová Helena, Kovaříková Hana, Kratochvil T
 [Link to your GitHub project folder](https://github.com/Krakenuz/Digital-electronics-1-Project)
 
 ## Zadání projektu
-Cílem projektu bylo vytvořit systém, který nám umožní zamykání a odemykání dveří pomocí pomocí 4-místného PIN kódu. V zadání bylo uedené, že pří zpracování tohoto projektu máme použít 4x3 tlačítek, čtyři 7-segmentové displaye a relé, kterým budeme ovládat zámek dveří. 
+Cílem projektu bylo vytvořit systém, který nám umožní zamykání a odemykání dveří pomocí pomocí 4-místného PIN kódu. V zadání bylo uvedené, že při zpracování tohoto projektu máme použít 4x3 tlačítek, čtyři 7-segmentové displaye a relé, kterým budeme ovládat zámek dveří. 
 
 ## Popis hardwaru
 #### Základní deska :
 Jako základní desku jsme zvolili Arty A7-100T.  
-Využili jsme na něj porty ck_io0-ck_io11 ako vstup a porty ja0-ja6, jb0-jb6, jc0-jc6, jd0-jd6 a ck_io12 ako výstup.
+Využili jsme na něj porty ck_io0-ck_io11 jako vstup a porty ja0-ja6, jb0-jb6, jc0-jc6, jd0-jd6 a ck_io12 jako výstup.
 
 ![deska](/Images/board.jpg)
 
@@ -96,7 +96,7 @@ Při tvorbě jsme použili modul HEX7SEG ze cvičení 4.
 ![deska_pcb](/Images/PCB_Deska.png)
 
 
-## Schéma zapojení modulov
+## Schéma zapojení modulů
 ![schema_modul](/Images/finally_ok_schema.png)
 
 ## VHDL moduly
@@ -609,9 +609,10 @@ popis screenshotu 4
 ![screenshot](/Images/scr4.png)
 
 ## Diskuze
-+ Podarilo sa nám úspešne vytvoriť systém zamykania dverí pomocou 4 miestneho pinu
-+ Ako bonus sme pridali že vieme daný 4 miestny PIN nastaviť
-+ Splnili sme všetky zadané kroky až na to že sa nám nepodarilo spraviť daný kód 100% podla zadaných VHDL Guidelines, pretože sme použili rising edge na tlačitka, nenapadlo nás iné riešenie a preto sme to spravili pomocou neho
++ Podařilo se nám úspěšně vytvořit systém zamykání dveří pomocí 4 místného pinu.
++ Jako bonus jsme přidali, že umíme tento 4 místný PIN nastavit. 
++ Splnili jsme všechny požadované úkoly
++ Splnili jsme všechny zadané kroky, až na to, že se nám nepodařilo vytvořit daný kód 100% podle zadaných VHDL Gudielines, protože jsme použili rising edge na tlačítka, jiný nápad, jak to vytvořit nás nenapadl
 + počas riešenia kódu sme pri na konci narazili na problém, ktorým bolo že sa nám nedal vygenerovať bitstream, problém spôsobovalo že sme viacej entít, vyriešili sme to tak že sme všetko dali do jedného VHDL súboru
 ++ keby ta napadli ešte nejake problémy a riešenia bolo by to super :D 
 
