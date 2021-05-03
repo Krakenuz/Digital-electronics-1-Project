@@ -47,7 +47,7 @@ Využili jsme porty ck_io0-ck_io11 jako vstup a porty ja0-ja6, jb0-jb6, jc0-jc6,
 </td></tr> </table>
 
 #### Tlačítka :
-| vstup | Button |
+| Hodnota proměnné | ID tlačítka |
 |  :-: | :-: | 
 | 000000000001 | button_0_i |
 | 000000000010 | button_1_i |
@@ -63,7 +63,7 @@ Využili jsme porty ck_io0-ck_io11 jako vstup a porty ja0-ja6, jb0-jb6, jc0-jc6,
 | 100000000000 | button_set_i |
 
 #### Displaye (hex_7seg) :
-| vstup | display zobrazí |
+| Hodnota proměnné | Display zobrazí |
 |  :-: | :-: | 
 | 0000 | 0 |
 | 0001 | 1 |
