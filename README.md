@@ -19,7 +19,7 @@ Využili jsme porty ck_io0-ck_io11 jako vstup a porty ja0-ja6, jb0-jb6, jc0-jc6,
 <tr><th> VSTUPY </th><th> VYSTUPY </th></tr>
 <tr><td>
 
-| TOP vstup | porty |
+| Port | TOP vstup |
 |  :-: | :-: | 
 | ck_io0 | button_0_i |
 | ck_io1 | button_1_i |
@@ -36,7 +36,7 @@ Využili jsme porty ck_io0-ck_io11 jako vstup a porty ja0-ja6, jb0-jb6, jc0-jc6,
 
 </td><td>
   
-| porty | TOP výstup |
+| Port | TOP výstup |
 |  :-: | :-: | 
 | seg_o | ja|
 | seg_2_o | jb |
