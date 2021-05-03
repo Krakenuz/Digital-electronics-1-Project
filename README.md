@@ -614,7 +614,7 @@ popis screenshotu 4
 + Splnili jsme všechny požadované úkoly
 + Splnili jsme všechny zadané kroky, až na to, že se nám nepodařilo vytvořit daný kód 100% podle zadaných VHDL Gudielines, protože jsme použili rising edge na tlačítka, jiný nápad, jak to vytvořit nás nenapadl
 + počas riešenia kódu sme pri na konci narazili na problém, ktorým bolo že sa nám nedal vygenerovať bitstream, problém spôsobovalo že sme viacej entít, vyriešili sme to tak že sme všetko dali do jedného VHDL súboru
-++ keby ta napadli ešte nejake problémy a riešenia bolo by to super :D 
++ keby ta napadli ešte nejake problémy a riešenia bolo by to super :D 
 
 ## Video
 odkaz na video
