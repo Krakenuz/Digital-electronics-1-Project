@@ -11,7 +11,7 @@ Cílem projektu bylo vytvořit systém, který nám umožní zamykání a odemyk
 ## Popis hardwaru
 #### Základní deska :
 Jako základní desku jsme zvolili Arty A7-100T.  
-Využili jsme na něj porty ck_io0-ck_io11 jako vstup a porty ja0-ja6, jb0-jb6, jc0-jc6, jd0-jd6 a ck_io12 jako výstup.
+Využili jsme porty ck_io0-ck_io11 jako vstup a porty ja0-ja6, jb0-jb6, jc0-jc6, jd0-jd6 a ck_io12 jako výstup.
 
 ![deska](/Images/board.jpg)
 
@@ -89,7 +89,7 @@ Další funkcí je automatické nulování displeje po časovém intervalu. Tak�
 Při tvorbě jsme použili modul HEX7SEG ze cvičení 4.
 
 ## Plošný spoj a jeho schéma
-+ popísať plošný spoj, niečo k nemu
+Pro tento projekt bylo zapotřebí použít prvky, kterými samotná vývojová deska nedisponuje. Proto bylo nutné navrhnout desku, která nám poskytne požadovanou funkcionalitu. Jako vstup máme připojeno 12 tlačítek a relé na IO piny, dále máme na Pmod přivedeny 4 sedmi-segmentové displeje. Níže se nachází navržené schéma a samotná PCB deska vytvořená v programu Autodesk EAGLE. 
 
 ![schema_pcb](/Images/PCB_Schema.png)
 
@@ -610,9 +610,9 @@ popis screenshotu 4
 
 ## Diskuze
 + Podařilo se nám úspěšně vytvořit systém zamykání dveří pomocí 4 místného pinu.
-+ Jako bonus jsme přidali, že umíme tento 4 místný PIN nastavit. 
-+ Splnili jsme všechny požadované úkoly
-+ Splnili jsme všechny zadané kroky, až na to, že se nám nepodařilo vytvořit daný kód 100% podle zadaných VHDL Gudielines, protože jsme použili rising edge na tlačítka, jiný nápad, jak to vytvořit nás nenapadl
++ Bonusová funkcionalita je možnost nastavení libovolné čtveřice číslic jako PIN kódu. 
++ Všechny požadované úkoly byly splněny. 
++ Splnili jsme všechny zadané kroky, s vyjímkou vytvoření kódu 100% podle zadaných VHDL Gudielines, protože jsme použili rising edge na tlačítka. Jiný nápad, jak to vytvořit nás nenapadl. 
 + Na konci řešení jsme narazili na problém s vygenerováním bitstreamu, problém způsobovalo více entit, řešení spočívalo ve spojení všech do jednoho VHDL souboru
 
 ## Video
