@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Sun May  2 16:01:07 2021
+| Date             : Sun May  2 21:18:49 2021
 | Host             : DESKTOP-MLV1D95 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -59,7 +59,7 @@ Table of Contents
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   Register     |    <0.001 |       69 |    126800 |            0.05 |
 |   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |    <0.001 |      184 |       --- |             --- |
+| Signals        |    <0.001 |      182 |       --- |             --- |
 | I/O            |    <0.001 |       42 |       210 |           20.00 |
 | Static Power   |     0.084 |          |           |                 |
 | Total          |     0.085 |          |           |                 |

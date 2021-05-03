@@ -33,27 +33,28 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity relay_control is
     Port (     
-           Passcode_1   : in std_logic_vector(4 - 1 downto 0);
-           Passcode_2   : in std_logic_vector(4 - 1 downto 0);
-           Passcode_3   : in std_logic_vector(4 - 1 downto 0);
-           Passcode_4   : in std_logic_vector(4 - 1 downto 0);
-           Display_1    : in std_logic_vector(4 - 1 downto 0);
-           Display_2    : in std_logic_vector(4 - 1 downto 0);
-           Display_3    : in std_logic_vector(4 - 1 downto 0);
-           Display_4    : in std_logic_vector(4 - 1 downto 0);
-           Relay_o      : out STD_LOGIC
+           passcode_1_i   : in std_logic_vector(4 - 1 downto 0);
+           passcode_2_i   : in std_logic_vector(4 - 1 downto 0);
+           passcode_3_i   : in std_logic_vector(4 - 1 downto 0);
+           passcode_4_i   : in std_logic_vector(4 - 1 downto 0);
+           display_1_i    : in std_logic_vector(4 - 1 downto 0);
+           display_2_i    : in std_logic_vector(4 - 1 downto 0);
+           display_3_i    : in std_logic_vector(4 - 1 downto 0);
+           display_4_i    : in std_logic_vector(4 - 1 downto 0);
+           relay_o      : out STD_LOGIC
          );
 end relay_control;
 
 architecture Behavioral of relay_control is
 
 begin
-    p_relay_control : process(Passcode_1,Passcode_2,Passcode_3,Passcode_4,Display_1,Display_2,Display_3,Display_4)
+    --Activates the relay if displayed numbers on numbers = PASSCODE
+    p_relay_control : process(passcode_1_i,passcode_2_i,passcode_3_i,passcode_4_i,display_1_i,display_2_i,display_3_i,display_4_i)
         begin
-            if (Display_1 = Passcode_1 and Display_2 = Passcode_2 and Display_3 = Passcode_3 and Display_4 = Passcode_4) then
-                Relay_o <= '1';
+            if (display_1_i = passcode_1_i and display_2_i = passcode_2_i and display_3_i = passcode_3_i and display_4_i = passcode_4_i) then
+                relay_o <= '1';
             else
-                Relay_o <= '0';
+                relay_o <= '0';
             end if;
     end process p_relay_control;
 

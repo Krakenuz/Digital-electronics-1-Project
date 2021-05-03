@@ -36,48 +36,48 @@ entity tb_relay_control is
 end tb_relay_control;
 
 architecture testbench of tb_relay_control is
-    signal s_Passcode_1 :  std_logic_vector(4 - 1 downto 0);
-    signal s_Passcode_2 :  std_logic_vector(4 - 1 downto 0);
-    signal s_Passcode_3 :  std_logic_vector(4 - 1 downto 0);
-    signal s_Passcode_4 :  std_logic_vector(4 - 1 downto 0);
-    signal s_Display_1  :  std_logic_vector(4 - 1 downto 0);
-    signal s_Display_2  :  std_logic_vector(4 - 1 downto 0);
-    signal s_Display_3  :  std_logic_vector(4 - 1 downto 0);
-    signal s_Display_4  :  std_logic_vector(4 - 1 downto 0);
-    signal s_Relay_o    :  STD_LOGIC;
+    signal s_passcode_1 :  std_logic_vector(4 - 1 downto 0);
+    signal s_passcode_2 :  std_logic_vector(4 - 1 downto 0);
+    signal s_passcode_3 :  std_logic_vector(4 - 1 downto 0);
+    signal s_passcode_4 :  std_logic_vector(4 - 1 downto 0);
+    signal s_display_1  :  std_logic_vector(4 - 1 downto 0);
+    signal s_display_2  :  std_logic_vector(4 - 1 downto 0);
+    signal s_display_3  :  std_logic_vector(4 - 1 downto 0);
+    signal s_display_4  :  std_logic_vector(4 - 1 downto 0);
+    signal s_relay_o    :  STD_LOGIC;
 
 begin
     uut_relay_control : entity work.relay_control
         port map(
-           Display_1	=>	s_Display_1,
-           Display_2	=>	s_Display_2,
-           Display_3	=>	s_Display_3,
-           Display_4	=>	s_Display_4,
-           Passcode_1   =>  s_Passcode_1,
-           Passcode_2   =>  s_Passcode_2,
-           Passcode_3   =>  s_Passcode_3,
-           Passcode_4   =>  s_Passcode_4,
-           Relay_o      =>  s_Relay_o
+           display_1_i	=>	s_display_1,
+           display_2_i	=>	s_display_2,
+           display_3_i	=>	s_display_3,
+           display_4_i	=>	s_display_4,
+           passcode_1_i   =>  s_passcode_1,
+           passcode_2_i   =>  s_passcode_2,
+           passcode_3_i   =>  s_passcode_3,
+           passcode_4_i   =>  s_passcode_4,
+           relay_o      =>  s_relay_o
            );
            
     p_stimulus : process
     begin
         report "Stimulus process started" severity note;
-            s_Passcode_1 <= "0001";
-            s_Passcode_2 <= "0010";
-            s_Passcode_3 <= "0011";
-            s_Passcode_4 <= "0100";
+            s_passcode_1 <= "0001";
+            s_passcode_2 <= "0010";
+            s_passcode_3 <= "0011";
+            s_passcode_4 <= "0100";
             
-            s_Display_1 <= "0001";
-            s_Display_2 <= "0110";
-            s_Display_3 <= "0011";
-            s_Display_4 <= "0110";
+            s_display_1 <= "0001";
+            s_display_2 <= "0110";
+            s_display_3 <= "0011";
+            s_display_4 <= "0110";
             wait for 20ns;
             
-            s_Display_1 <= "0001";
-            s_Display_2 <= "0010";
-            s_Display_3 <= "0011";
-            s_Display_4 <= "0100";
+            s_display_1 <= "0001";
+            s_display_2 <= "0010";
+            s_display_3 <= "0011";
+            s_display_4 <= "0100";
             wait for 20ns;
             
         report "Stimulus process finished" severity note;

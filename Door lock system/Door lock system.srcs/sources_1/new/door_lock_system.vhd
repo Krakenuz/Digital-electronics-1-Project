@@ -33,19 +33,19 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity door_lock_system is
     Port ( clk     : in  std_logic;
-           Button_0 : in STD_LOGIC;
-           Button_1 : in STD_LOGIC;
-           Button_2 : in STD_LOGIC;
-           Button_3 : in STD_LOGIC;
-           Button_4 : in STD_LOGIC;
-           Button_5 : in STD_LOGIC;
-           Button_6 : in STD_LOGIC;
-           Button_7 : in STD_LOGIC;
-           Button_8 : in STD_LOGIC;
-           Button_9 : in STD_LOGIC;
-           Button_RESET : in STD_LOGIC;
-           Button_SET : in STD_LOGIC;
-           Relay_o      : out STD_LOGIC;
+           button_0_i : in STD_LOGIC;
+           button_1_i : in STD_LOGIC;
+           button_2_i : in STD_LOGIC;
+           button_3_i : in STD_LOGIC;
+           button_4_i : in STD_LOGIC;
+           button_5_i : in STD_LOGIC;
+           button_6_i : in STD_LOGIC;
+           button_7_i : in STD_LOGIC;
+           button_8_i : in STD_LOGIC;
+           button_9_i : in STD_LOGIC;
+           button_reset_i : in STD_LOGIC;
+           button_set_i : in STD_LOGIC;
+           relay_o      : out STD_LOGIC;
            seg_o : out std_logic_vector(7 - 1 downto 0);
            seg_2_o : out std_logic_vector(7 - 1 downto 0);
            seg_3_o : out std_logic_vector(7 - 1 downto 0);
@@ -54,39 +54,39 @@ entity door_lock_system is
 end door_lock_system;
 
 architecture Behavioral of door_lock_system is
-    signal internal_Display_1 : std_logic_vector(4 - 1 downto 0);
-    signal internal_Display_2 : std_logic_vector(4 - 1 downto 0);
-    signal internal_Display_3 : std_logic_vector(4 - 1 downto 0);
-    signal internal_Display_4 : std_logic_vector(4 - 1 downto 0);
+    signal s_internal_display_1 : std_logic_vector(4 - 1 downto 0);
+    signal s_internal_display_2 : std_logic_vector(4 - 1 downto 0);
+    signal s_internal_display_3 : std_logic_vector(4 - 1 downto 0);
+    signal s_internal_display_4 : std_logic_vector(4 - 1 downto 0);
     
-    signal internal_Passcode_1   : std_logic_vector(4 - 1 downto 0);
-    signal internal_Passcode_2   : std_logic_vector(4 - 1 downto 0);
-    signal internal_Passcode_3   : std_logic_vector(4 - 1 downto 0);
-    signal internal_Passcode_4   : std_logic_vector(4 - 1 downto 0);
+    signal s_internal_passcode_1   : std_logic_vector(4 - 1 downto 0);
+    signal s_internal_passcode_2   : std_logic_vector(4 - 1 downto 0);
+    signal s_internal_passcode_3   : std_logic_vector(4 - 1 downto 0);
+    signal s_internal_passcode_4   : std_logic_vector(4 - 1 downto 0);
 begin
         disp_cnt: entity work.display_control
         port map (
-            Button_0=>Button_0,
-            Button_1=>Button_1,
-            Button_2=>Button_2,
-            Button_3=>Button_3,
-            Button_4=>Button_4,
-            Button_5=>Button_5,
-            Button_6=>Button_6,
-            Button_7=>Button_7,
-            Button_8=>Button_8,
-            Button_9=>Button_9,
-            Button_RESET=>Button_RESET,
-            Button_SET=>Button_SET,        
-           Display_1=>internal_Display_1,
-           Display_2=>internal_Display_2,
-           Display_3=>internal_Display_3,
-           Display_4=>internal_Display_4,
-           Passcode_1=>internal_Passcode_1,
-           Passcode_2=>internal_Passcode_2,
-           Passcode_3=>internal_Passcode_3,
-           Passcode_4=>internal_Passcode_4,
-           Relay_o=>Relay_o,
+            button_0_i=>button_0_i,
+            button_1_i=>button_1_i,
+            button_2_i=>button_2_i,
+            button_3_i=>button_3_i,
+            button_4_i=>button_4_i,
+            button_5_i=>button_5_i,
+            button_6_i=>button_6_i,
+            button_7_i=>button_7_i,
+            button_8_i=>button_8_i,
+            button_9_i=>button_9_i,
+            button_reset_i=>button_reset_i,
+            button_set_i=>button_set_i,        
+           display_1_o=>s_internal_display_1,
+           display_2_o=>s_internal_display_2,
+           display_3_o=>s_internal_display_3,
+           display_4_o=>s_internal_display_4,
+           passcode_1_o=>s_internal_passcode_1,
+           passcode_2_o=>s_internal_passcode_2,
+           passcode_3_o=>s_internal_passcode_3,
+           passcode_4_o=>s_internal_passcode_4,
+           relay_o=>relay_o,
            seg_o=>seg_o,
            seg_2_o=>seg_2_o,
            seg_3_o=>seg_3_o,
@@ -96,23 +96,23 @@ begin
         
         --relay_cnt: entity work.relay_control
             --port map (
-                --Passcode_1=>internal_Passcode_1,
-                --Passcode_2=>internal_Passcode_2,
-                --Passcode_3=>internal_Passcode_3,
-                --Passcode_4=>internal_Passcode_4,
-                --Display_1=>internal2_Display_1,
-                --Display_2=>internal2_Display_2,
-                --Display_3=>internal2_Display_3,
-                --Display_4=>internal2_Display_4,
-                --Relay_o=>Relay_o
+                --passcode_1=>s_internal_passcode_1,
+                --passcode_2=>s_internal_passcode_2,
+                --passcode_3=>s_internal_passcode_3,
+                --passcode_4=>s_internal_passcode_4,
+                --display_1=>internal2_display_1,
+                --display_2=>internal2_display_2,
+                --display_3=>internal2_display_3,
+                --display_4=>internal2_display_4,
+                --relay_o=>relay_o
            -- ); 
         
         --hex_7seg: entity work.hex_7seg
           --  port map(
-            --    hex_i=>internal3_Display_1,
-              --  hex_2_i=>internal3_Display_2,
-              --  hex_3_i=>internal3_Display_3,
-               -- hex_4_i=>internal3_Display_4,
+            --    hex_i=>internal3_display_1,
+              --  hex_2_i=>internal3_display_2,
+              --  hex_3_i=>internal3_display_3,
+               -- hex_4_i=>internal3_display_4,
                -- seg_o=>seg_o,
                -- seg_2_o=>seg_2_o,
                -- seg_3_o=>seg_3_o,

@@ -103,7 +103,7 @@ Při tvorbě jsme použili modul HEX7SEG ze cvičení 4.
 ### Princip `relay_control`
 ```vhdl 
 	--Relay Control
-    --Sepne relé, když se číslice na displeji = heslu.
+    --Activates the relay if displayed numbers on numbers = PASSCODE
     if (s_internal2_Display_1 = s_internal2_Passcode_1 and s_internal2_Display_2 = s_internal2_Passcode_2 and s_internal2_Display_3 = s_internal2_Passcode_3 and s_internal2_Display_4 = s_internal2_Passcode_4) then
                Relay_o <= '1';
             else
@@ -113,7 +113,7 @@ Při tvorbě jsme použili modul HEX7SEG ze cvičení 4.
 
 ### Princip `hex_7seg`
 ```vhdl
-	--Překládá signál v binárním tvaru(0000 = číslice 0 na 7 segmentový displej) do signálu pro 7 segmentové displeje
+	-- Translates binary signal (0000 = number 0) to input for 7segment display   
 	case s_internal2_Display_1 is
             when "0000" =>
                 seg_o <= "0000001";     --0
@@ -265,7 +265,7 @@ Při tvorbě jsme použili modul HEX7SEG ze cvičení 4.
 		
 	p_display_control: process(clk,Button_0_i,Button_1_i,Button_2_i,Button_3_i,Button_4_i,Button_5_i,Button_6_i,Button_7_i,Button_8_i,Button_9_i,Button_RESET_i,Button_SET_i,s_cnt,s_Buttons,display_time,s_reset_cnt)
 begin 
-	--Převedu vstupy tlačítek do 1 vektoru
+	 --Transform inputs of buttons to 1 vector
     s_Buttons(0) <= Button_0_i;
     s_Buttons(1) <= Button_1_i;
     s_Buttons(2) <= Button_2_i;
@@ -279,16 +279,16 @@ begin
     s_Buttons(10) <= Button_RESET_i;
     s_Buttons(11) <= Button_SET_i;
 	
-	--Při stisku tlačítka (číslice) se připočítává k s_cnt 1. s_cnt nám udává jaký displej se zrovna nastavuje.
-	--Když s_cnt=1 nastavuje se 1. displej, s_cnt =4 nastavuje se hodnota na čtvrtý displej.
+	--When button gets pushed s_cnt tells us which display is going to be set
+    --If s_cnt =1 => First display will be set, s_cnt=2 => second display is going to be set
     if (rising_edge(Button_0_i) or rising_edge(Button_1_i)or rising_edge(Button_2_i)or rising_edge(Button_3_i)or rising_edge(Button_4_i)or rising_edge(Button_5_i)or rising_edge(Button_6_i)or rising_edge(Button_7_i)or rising_edge(Button_8_i)or rising_edge(Button_9_i)) then
         if s_cnt<4 then
         s_cnt <=s_cnt+1;
         end if;
     end if;
-	--Tlačítko SET slouží pro změnu hesla. 
+	--Button SET is used for PASSWORD CHANGE
     if(rising_edge(Button_SET_i)) then
-			--Pokud ještě heslo není nastaveno (první spuštění) nastaví se nové heslo na aktuální číslice na displeji. 
+			--if password is undefined. Password is set from current values on display
             if (s_internal_Passcode_1 ="UUUU") then
              
                 s_internal_Passcode_1 <= s_internal_Display_1;
@@ -297,8 +297,8 @@ begin
                 s_internal_Passcode_4 <= s_internal_Display_4;
                 s_set_disp<='1';
             else
-			--Když už je heslo nastaveno na nějakou hodnotu. Zkontrolujeme, jestli se heslo rovná heslu na displeji. Pokud ano, vynulujeme displej a můžeme nastavit nové heslo.
-			--Označení stavu, že se nastavuje nové heslo docílíme pomocí nastavení signálu s_set_password na true
+			 --Password is already set on some value. Check if password = display value. If yes display gets cleared and we can set new password
+            --s_set_password is used to identify state when we are setting new password.
             if (s_internal_Display_1 = s_internal_Passcode_1 and s_internal_Display_2 = s_internal_Passcode_2 and s_internal_Display_3 = s_internal_Passcode_3 and s_internal_Display_4 = s_internal_Passcode_4) then
                 --Vynulování displaye před nastavením nového hesla
                
@@ -312,7 +312,7 @@ begin
                 --nastavení nového hesla
                 s_set_password<=true;
             else
-			--Pokud je s_set_password true. Nastavíme nové heslo na aktuálně zadanou hodnotu na displejích. 
+			--if s_set_password is active we set password on new value from current value on display
             if (s_set_password=true) then
                
                 s_internal_Passcode_1 <= s_internal_Display_1;
@@ -326,12 +326,12 @@ begin
             end if;
             end if;
             end if;
-	--RESET pro pořadík displeje		
+	--RESET of display position counter   	
     if(s_reset_cnt='1') then
     s_cnt<=0;
     s_reset_cnt<='0';
     end if;
-	--RESET displeje (vynulování)
+	--RESET display
     if(s_reset_disp='1') then
         s_internal2_Display_1<="0000";
         s_internal2_Display_2<="0000";
@@ -339,7 +339,7 @@ begin
         s_internal2_Display_4<="0000";
     s_reset_disp<='0';
     end if; 
-	--SET pro nastavení hesla na číslice z displeje
+
     if(s_set_disp='1') then
         s_internal2_Passcode_1 <= s_internal2_Display_1;
         s_internal2_Passcode_2 <= s_internal2_Display_2;
@@ -348,24 +348,24 @@ begin
     s_set_disp<='0';
     end if; 
 	
-	--CASE, který nastavuje hodnoty na displeje. Používá k tomu s_cnt. Pomocí s_cnt ví, kolikátý displej v pořadí má nastavit.
+	--Case for setting values on displays. It uses s_cnt to identify which display is going to be set
 	
     case s_Buttons is
         when "000000000001" =>  --0, Bylo stisknuto tlačítko 0
             case s_cnt is
-                when 1 =>	--Když s_cnt =1 , nastavuju číslici na 1. displej
+                when 1 =>	
                    -- Display_1<="0000";
                     s_internal_Display_1<="0000";
                     s_s_internal2_Display_1<="0000";
-                when 2 =>	--Když s_cnt =2 , nastavuju číslici na 2. displej
+                when 2 =>	
                    -- Display_2<="0000";
                     s_internal_Display_2<="0000";
                     s_internal2_Display_2<="0000";
-                when 3 =>	--Když s_cnt =3 , nastavuju číslici na 3. displej
+                when 3 =>	
                    -- Display_3<="0000";
                     s_internal_Display_3<="0000";
                     s_internal2_Display_3<="0000";
-                when 4 =>	--Když s_cnt =4 , nastavuju číslici na 4. displej
+                when 4 =>	
                    -- Display_4<="0000";
                     s_internal_Display_4<="0000";
                     s_internal2_Display_4<="0000";
@@ -551,7 +551,7 @@ begin
                     s_internal2_Display_4<="1001";
                     when others =>   
             end case;   
-        when "010000000000" =>      --RESET, resetuje displeje a pořadník s_cnt
+        when "010000000000" =>      --RESET
             s_internal_Display_1<="0000";
             s_internal_Display_2<="0000";
             s_internal_Display_3<="0000";
@@ -565,16 +565,16 @@ begin
         when others =>   
         
     end case;
-	--Počítač času, jak dlouho uplynulo od nastavení prvního displeje
+	--counter of time from first button press
     if (rising_edge(clk) and s_cnt>0) then
-		s_display_time <=s_display_time+10;	--každých 10ms přidá hodnotu 10 do display_time
+		s_display_time <=s_display_time+10;	--every 10ms 
     end if;
-	--Po vyresetování displeje se musí také vynulovat čas
+	
     if(s_cnt=0) then
         display_time <=0;
     end if;
-	--Po uplynutí nastavené doby vyresetuje displeje. Například po zadání hesla se otevřou dveře a po době X se vynuluje displej a zároveň zamknou dveře.
-	-- Pro účel simulaci jsme použíli hodnotu s_display_time =500. To odpovídá době 500ms. Pro reálné použití se musí použít hodnota v řádu několika vteřin. Například 5sekund => s_display_time =5000
+	--Resets display after predefined time from first press of button. 
+	--for purpose of simulation we set reset after 500ms, thats why s_display_time>500; In real use we would have to use something around 5 seconds (s_display_time = 5000ms)
     if(s_display_time>500) then
        -- Display_1<="0000";
        -- Display_2<="0000";

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sun May  2 15:59:20 2021
+| Date         : Sun May  2 21:16:58 2021
 | Host         : DESKTOP-MLV1D95 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
 | Design       : top
@@ -146,16 +146,16 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT4     |   42 |                 LUT |
+| LUT4     |   38 |                 LUT |
 | LDCE     |   36 |        Flop & Latch |
 | FDCE     |   32 |        Flop & Latch |
-| LUT6     |   31 |                 LUT |
+| LUT6     |   30 |                 LUT |
 | OBUF     |   29 |                  IO |
-| LUT5     |   15 |                 LUT |
+| LUT5     |   20 |                 LUT |
 | IBUF     |   13 |                  IO |
 | CARRY4   |    8 |          CarryLogic |
-| LUT2     |    5 |                 LUT |
-| LUT3     |    3 |                 LUT |
+| LUT3     |    4 |                 LUT |
+| LUT2     |    4 |                 LUT |
 | LUT1     |    2 |                 LUT |
 | BUFG     |    2 |               Clock |
 | FDPE     |    1 |        Flop & Latch |
