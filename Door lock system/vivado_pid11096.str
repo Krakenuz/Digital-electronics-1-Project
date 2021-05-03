@@ -310,3 +310,18 @@ typeControlKey((HResource) null, "display_control.vhd", 'c'); // bP
 // Elapsed time: 283 seconds
 selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u
 // Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 82 MB. Current time: 5/3/21, 3:25:28 PM CEST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1025 ms. Increasing delay to 3075 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 74 MB. Current time: 5/3/21, 3:55:28 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 73 MB. Current time: 5/3/21, 4:25:29 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 73 MB. Current time: 5/3/21, 4:55:29 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 73 MB. Current time: 5/3/21, 5:25:29 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 73 MB. Current time: 5/3/21, 5:55:30 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 73 MB. Current time: 5/3/21, 6:25:30 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 73 MB. Current time: 5/3/21, 6:55:31 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 73 MB. Current time: 5/3/21, 7:25:31 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 73 MB. Current time: 5/3/21, 7:55:32 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 73 MB. Current time: 5/3/21, 8:25:32 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 73 MB. Current time: 5/3/21, 8:55:33 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 73 MB. Current time: 5/3/21, 9:25:33 PM CEST

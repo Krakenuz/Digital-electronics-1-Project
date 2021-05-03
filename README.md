@@ -590,23 +590,18 @@ begin
     end if; 
 ```
 
-## TOP modul
-### Architektura a porty `top` modulu
-Tabulka pinu
+
 
 ## Screenshoty ze simulací
-### screenshot 1 
-popis screenshotu 1
-![screenshot](/Images/scr1.png)
-### screenshot 2
-popis screenshotu 2
-![screenshot](/Images/scr2.png)
-### screenshot 3
-popis screenshotu 3
-![screenshot](/Images/scr3.png)
-### screenshot 4
-popis screenshotu 4
-![screenshot](/Images/scr4.png)
+### Simulace display_control
+
+![screenshot](/Images/simulace-display_control.PNG)
+### Simulace door_lock_system
+
+![screenshot](/Images/simulace-door_lock_system.PNG)
+### Simulace relay_control
+
+![screenshot](/Images/simulace-relay_control.PNG)
 
 ## Diskuze
 + Podařilo se nám úspěšně vytvořit systém zamykání dveří pomocí 4 místného pinu.
