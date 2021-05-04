@@ -673,7 +673,7 @@ end Behavioral;
 [Link `tb_door_lock_system`](https://github.com/Krakenuz/Digital-electronics-1-Project/blob/main/Door%20lock%20system/Door%20lock%20system.srcs/sim_1/new/tb_door_lock_system.vhd)
 
 ![screenshot](Images/simulace-door_lock_system.PNG)
-- Jak již vyplinulo z popisu modulu výše a schématu, door_lock_system je v podstatě stejně jako top modul obal celé aplikace. Při zadání stisknutím jednotlivých tlačítek je v simulaci patrné, že se na jednotlivé sedmisegmentové displeje odesílá signál odpovídající zobrovanému číslu, zároveň je zde také vidět, že při nastavení hesla a jeho opětovném zadání se vždy otevře zámek a pokud není jinou funkcionalitou (například dalším zadáním, resetováním displeje nebo nastavováním hesla) nijak přerušen, zůstane zámek otevřen až do uplinutí jistého časového intervalu, na jehož konci se opět zamkne a displej vynuluje, viz. konec simulace.
+- Jak již vyplynulo z popisu modulu výše a schématu, door_lock_system je v podstatě stejně jako top modul obal celé aplikace. Při zadání stisknutím jednotlivých tlačítek je v simulaci patrné, že se na jednotlivé sedmisegmentové displeje odesílá signál odpovídající zobrovanému číslu, zároveň je zde také vidět, že při nastavení hesla a jeho opětovném zadání se vždy otevře zámek a pokud není jinou funkcionalitou (například dalším zadáním, resetováním displeje nebo nastavováním hesla) nijak přerušen, zůstane zámek otevřen až do uplinutí jistého časového intervalu, na jehož konci se opět zamkne a displej vynuluje, viz. konec simulace.
 
 
 ## Diskuze
