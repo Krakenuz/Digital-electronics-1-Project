@@ -675,7 +675,7 @@ end Behavioral;
 + Projekt by se dal vylepšit například přidáním další notifikační funcionality v případě zadání správného, nebo naopak špatného PIN kódu, či při nastavování hesla atd. Tohle vylepšení bylo plánované, ale bohužel na něj nezbyl čas. Dalším vylepšením by mohlo být skrytí zadaného PIN kódu buď již postupně při jeho zadávání nebo vzápětí po otevření dveří
 
 ## Video
-odkaz na video
+https://vutbr-my.sharepoint.com/:v:/g/personal/xkisle00_vutbr_cz/EWlPWd2NCFNCt8VZ6NOaIO8B0kjkbubqfCMP8LZBfQDrzA?e=EPvYOn
 
 ## Reference
 - Referenční manuál použité vývojové desky Arty osazené s FPGA řady A7 od firmy Xilinx:
