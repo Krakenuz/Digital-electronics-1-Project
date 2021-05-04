@@ -259,9 +259,7 @@ Modul hex_7seg je rozšířená verze modulu stejného jména, jež byl součás
 ```
 
 ### Architektura a porty `door_lock_system`
-```vhdl 
-
-```
+door_lock_system je v podstatě jenom spojení modulů display_control, relay_control a hex7seg. Tento modul byl vytvořen za účelem otestování korektnosti funčnosti všech třech modulů dohromady jako systému.
 
 ### Princip `display_control`
 Modul display_control představuje hlavní část programu. Vstupují do něj tlačítka, kterým je v tomto modulu přiřazena 4 bitová hodnota zobrazovaného znaku na displeji. Při každém zmáčknutí tlačítka se zvyšuje hodnota vnitřní proměnné s_cnt, pomocí čehož je dosaženo postupné zadávání hodnot do displejů 1-4. Při zmáčknutí tlačítka Button_RESET_i, nebo při uplynutí časového intervalu, při kterém jsou tlačítka neaktivní a displeje konstantní, se displeje vynulují. Pokud je zámek spuštěn poprvé, bez dříve nastaveného hesla, první zadání celého hesla na displej a následné potvrzení tlačítkem Button_SET_i heslo nastaví. Změna hesla může být provedena pouze tehdy, pokud zadáme správně aktiální heslo a následně ho potvrdíme tlačítkem Button_SET_i. Po každém nastavení se displej vynuluje.
