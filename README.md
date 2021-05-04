@@ -33,7 +33,7 @@ Využili jsme porty ck_io0-ck_io11 jako vstup a porty ja0-ja6, jb0-jb6, jc0-jc6,
 | ck_io9 | button_9_i |
 | ck_io10 | button_reset_i |
 | ck_io11 | button_set_i |
-
+| CLK100MHZ | clk |
 </td><td>
   
 | Port | TOP výstup |

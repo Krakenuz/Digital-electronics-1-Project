@@ -88,3 +88,5 @@ INFO: [USF-XSim-97] XSim simulation ran for 4000ns
 launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 987.168 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May  3 22:05:01 2021...
