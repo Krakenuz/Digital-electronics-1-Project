@@ -651,6 +651,9 @@ end Behavioral;
 ### Simulace display_control
 
 ![screenshot](/Images/simulace-display_control.PNG)
+Na začátku simulace je vidět, že po prvním nastavení všech 4 čísel není v testbenchy simulováno stisknutí tlačítka SET, což názorně ukazuje, že bez tohoto potvrzení není možné heslo nastavit. Následným resetováním se hodnoty na všech displejích změní na 0. Další sekvencí 4 stisknutí tlačítek a následným povrzením se údaje z displejů uloží a tím je nastaveno heslo. Po opětovném zadání tohoto hesla a potvrzením tlačítkem SET se Displej vynuluje a kód je nyní v režimu editace hesla, kdy následné potvrzení tlačítkem SET zobrazené heslo na displeji uloží a přepíše jím to původní. Při zadání špatného hesla, se program do režimu editace hesla nedostane, což je vidět při zadání hodnot "9 6 9 5".
+
+
 ### Simulace door_lock_system
 
 ![screenshot](/Images/simulace-door_lock_system.PNG)
