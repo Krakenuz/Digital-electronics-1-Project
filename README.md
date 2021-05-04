@@ -102,6 +102,7 @@ Relé :
 
 ## VHDL moduly
 ### Princip `relay_control`
+[Link `relay_control`](https://github.com/Krakenuz/Digital-electronics-1-Project/blob/main/Door%20lock%20system/Door%20lock%20system.srcs/sources_1/new/relay_control.vhd)
 - Tento modul slouží k ověření zadaného hesla.Pokud zadané heslo souhlasí, sepne se relé a otevře se zámek.
 ```vhdl 
 	--Relay Control
@@ -114,6 +115,7 @@ Relé :
 ```
 
 ### Princip `hex_7seg`
+[Link `hex_7seg`](https://github.com/Krakenuz/Digital-electronics-1-Project/blob/main/Door%20lock%20system/Door%20lock%20system.srcs/sources_1/new/hex_7seg.vhd)
 - Modul hex_7seg je rozšířená verze modulu stejného jména, jež byl součástí několika laboratorních cvičení, viz reference. Slouží k překladu čtyřbitového binárního kódu na sedmibitový binární kód, jehož jedničky představují sepnuté segmenty displeje.
 ```vhdl
 	-- Translates binary signal (0000 = number 0) to input for 7segment display   
@@ -259,9 +261,11 @@ Relé :
 ```
 
 ### Architektura a porty `door_lock_system`
+[Link `door_lock_system`](https://github.com/Krakenuz/Digital-electronics-1-Project/blob/main/Door%20lock%20system/Door%20lock%20system.srcs/sources_1/new/door_lock_system.vhd)
 - door_lock_system je v podstatě jenom spojení modulů display_control, relay_control a hex7seg. Tento modul byl vytvořen za účelem otestování korektnosti funčnosti všech třech modulů dohromady jako systému.
 
 ### Princip `display_control`
+[Link `display_control`](https://github.com/Krakenuz/Digital-electronics-1-Project/blob/main/Door%20lock%20system/Door%20lock%20system.srcs/sources_1/new/display_control.vhd)
 - Modul display_control představuje hlavní část programu. Vstupují do něj tlačítka, kterým je v tomto modulu přiřazena 4 bitová hodnota zobrazovaného znaku na displeji. Při každém zmáčknutí tlačítka se zvyšuje hodnota vnitřní proměnné s_cnt, pomocí čehož je dosaženo postupné zadávání hodnot do displejů 1-4. Při zmáčknutí tlačítka Button_RESET_i, nebo při uplynutí časového intervalu, při kterém jsou tlačítka neaktivní a displeje konstantní, se displeje vynulují. Pokud je zámek spuštěn poprvé, bez dříve nastaveného hesla, první zadání celého hesla na displej a následné potvrzení tlačítkem Button_SET_i heslo nastaví. Změna hesla může být provedena pouze tehdy, pokud zadáme správně aktiální heslo a následně ho potvrdíme tlačítkem Button_SET_i. Po každém nastavení se displej vynuluje.
 ```vhdl
 		
@@ -593,6 +597,7 @@ begin
 ```
 
 ### Porty `top` modulu
+[Link `top`](https://github.com/Krakenuz/Digital-electronics-1-Project/blob/main/Door%20lock%20system/Door%20lock%20system.srcs/sources_1/new/top.vhd)
 - Každý sedmisegmentový displej je připojen na vlastní pmod konektor. Tlačítka a relé jsou připojeny přes univerzální input/output piny (původně určené pro Arduino shield). Je zde také přiveden zdroj hodin, pro vynulování displejů v display_control, viz. výše.
 ```vhdl
 architecture Behavioral of top is
@@ -649,18 +654,21 @@ end Behavioral;
 
 ## Screenshoty ze simulací
 ### Simulace display_control
+[Link `display_control`](https://github.com/Krakenuz/Digital-electronics-1-Project/blob/main/Door%20lock%20system/Door%20lock%20system.srcs/sim_1/new/tb_display_control.vhd)
 
 ![screenshot](/Images/simulace-display_control.PNG)
 - Na začátku simulace je vidět, že po prvním nastavení všech 4 čísel není v testbenchy simulováno stisknutí tlačítka SET, což názorně ukazuje, že bez tohoto potvrzení není možné heslo nastavit. Následným resetováním se hodnoty na všech displejích změní na 0. Další sekvencí 4 stisknutí tlačítek a následným povrzením se údaje z displejů uloží a tím je nastaveno heslo. Po opětovném zadání tohoto hesla a potvrzením tlačítkem SET se Displej vynuluje a kód je nyní v režimu editace hesla, kdy následné potvrzení tlačítkem SET zobrazené heslo na displeji uloží a přepíše jím to původní. Při zadání špatného hesla, se program do režimu editace hesla nedostane, což je vidět při zadání hodnot "9 6 9 5".
 
 
 ### Simulace relay_control
+[Link `relay_control`](https://github.com/Krakenuz/Digital-electronics-1-Project/blob/main/Door%20lock%20system/Door%20lock%20system.srcs/sim_1/new/tb_relay_control.vhd)
 
 ![screenshot](/Images/simulace-relay_control.PNG)
 - Na simulaci relay_control je pouze jednoduše ukázáno, že jakmile dojde na vstup z display_control správná kombinace, jež odpovídá uloženému heslu, modul změní hodnotu proměnné Relay_o na 1, sepne relé a otevře zámek.
 
 
 ### Simulace door_lock_system
+[Link `relay_control`](https://github.com/Krakenuz/Digital-electronics-1-Project/blob/main/Door%20lock%20system/Door%20lock%20system.srcs/sim_1/new/tb_door_lock_system.vhd)
 
 ![screenshot](/Images/simulace-door_lock_system.PNG)
 - Jak již vyplinulo z popisu modulu výše a schématu, door_lock_system je v podstatě stejně jako top modul obal celé aplikace. Při zadání stisknutím jednotlivých tlačítek je v simulaci patrné, že se na jednotlivé sedmisegmentové displeje odesílá signál odpovídající zobrovanému číslu, zároveň je zde také vidět, že při nastavení hesla a jeho opětovném zadání se vždy otevře zámek a pokud není jinou funkcionalitou (například dalším zadáním, resetováním displeje nebo nastavováním hesla) nijak přerušen, zůstane zámek otevřen až do uplinutí jistého časového intervalu, na jehož konci se opět zamkne a displej vynuluje, viz. konec simulace.
