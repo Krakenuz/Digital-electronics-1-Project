@@ -652,6 +652,8 @@ begin
 end Behavioral;
 ```
 
+[Link na vygenerovaný bitstream](https://github.com/Krakenuz/Digital-electronics-1-Project/blob/main/Door%20lock%20system/Door%20lock%20system.runs/impl_1/top.bit)
+
 ## Screenshoty ze simulací
 ### Simulace display_control
 [Link `tb_display_control`](https://github.com/Krakenuz/Digital-electronics-1-Project/blob/main/Door%20lock%20system/Door%20lock%20system.srcs/sim_1/new/tb_display_control.vhd)
