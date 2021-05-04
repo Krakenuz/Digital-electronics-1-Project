@@ -654,12 +654,17 @@ end Behavioral;
 Na začátku simulace je vidět, že po prvním nastavení všech 4 čísel není v testbenchy simulováno stisknutí tlačítka SET, což názorně ukazuje, že bez tohoto potvrzení není možné heslo nastavit. Následným resetováním se hodnoty na všech displejích změní na 0. Další sekvencí 4 stisknutí tlačítek a následným povrzením se údaje z displejů uloží a tím je nastaveno heslo. Po opětovném zadání tohoto hesla a potvrzením tlačítkem SET se Displej vynuluje a kód je nyní v režimu editace hesla, kdy následné potvrzení tlačítkem SET zobrazené heslo na displeji uloží a přepíše jím to původní. Při zadání špatného hesla, se program do režimu editace hesla nedostane, což je vidět při zadání hodnot "9 6 9 5".
 
 
-### Simulace door_lock_system
-
-![screenshot](/Images/simulace-door_lock_system.PNG)
 ### Simulace relay_control
 
 ![screenshot](/Images/simulace-relay_control.PNG)
+Na simulaci relay_control je pouze jednoduše ukázáno, že jakmile dojde na vstup z display_control správná kombinace, jež odpovídá uloženému heslu, modul změní hodnotu proměnné Relay_o na 1, sepne relé a otevře zámek.
+
+
+### Simulace door_lock_system
+
+![screenshot](/Images/simulace-door_lock_system.PNG)
+Jak již vyplinulo z popisu modulu výše a schématu, door_lock_system je v podstatě stejně jako top modul obal celé aplikace. Při zadání stisknutím jednotlivých tlačítek je v simulaci patrné, že se na jednotlivé sedmisegmentové displeje odesílá signál odpovídající zobrovanému číslu, zároveň je zde také vidět, že při nastavení hesla a jeho opětovném zadání se vždy otevře zámek a pokud není jinou funkcionalitou (například dalším zadáním, resetováním displeje nebo nastavováním hesla) nijak přerušen, zůstane zámek otevřen až do uplinutí jistého časového intervalu, na jehož konci se opět zamkne a displej vynuluje, viz. konec simulace.
+
 
 ## Diskuze
 + Podařilo se nám úspěšně vytvořit systém zamykání dveří pomocí 4 místného pinu.
