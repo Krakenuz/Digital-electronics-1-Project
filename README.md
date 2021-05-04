@@ -666,7 +666,7 @@ end Behavioral;
 + Všechny požadované úkoly byly splněny. 
 + Splnili jsme všechny zadané kroky, s vyjímkou vytvoření kódu 100% podle zadaných VHDL Gudielines, protože jsme použili rising edge na tlačítka. Jiný nápad, jak to vytvořit nás nenapadl. 
 + Na konci řešení jsme narazili na problém s vygenerováním bitstreamu, problém způsobovalo více entit, řešení spočívalo ve spojení všech do jednoho VHDL souboru
-+ Projekt by se dal vylepšit například přidáním další notifikační funcionality v případě zadání správného, nebo naopak špatného PIN kódu, či při nastavování hesla atd. Tohle vylepšení bylo plánované, ale bohužel na něj nezbyl čas. Dalším vylepšením by mohlo být skrytí zadaného PIN kódu buď již postupně při jeho zadávání nebo vzápětí po otevření dveří.
++ Projekt by se dal vylepšit například přidáním další notifikační funcionality v případě zadání správného, nebo naopak špatného PIN kódu, či při nastavování hesla atd. Tohle vylepšení bylo plánované, ale bohužel na něj nezbyl čas. Dalším vylepšením by mohlo být skrytí zadaného PIN kódu buď již postupně při jeho zadávání nebo vzápětí po otevření dveří
 
 ## Video
 odkaz na video
