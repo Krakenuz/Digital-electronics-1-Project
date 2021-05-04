@@ -98,7 +98,7 @@ Relé :
 
 
 ## Schéma zapojení modulů
-![schema_modul](/Images/finally_ok_schema.png)
+![schema_modul](/Images/top_schema.jpg)
 
 ## VHDL moduly
 ### Princip `relay_control`
