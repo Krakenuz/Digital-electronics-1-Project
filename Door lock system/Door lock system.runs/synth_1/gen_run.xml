@@ -83,8 +83,8 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design">
       <Option Id="FlattenHierarchy">1</Option>
-      <Option Id="NoCombineLuts">1</Option>
       <Option Id="KeepEquivalentRegisters">1</Option>
+      <Option Id="NoCombineLuts">1</Option>
     </Step>
   </Strategy>
 </GenRun>
