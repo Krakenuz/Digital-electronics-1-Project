@@ -13,7 +13,7 @@ Jurek Martin, Kadlec Jiří, Kislerová Helena, Kovaříková Hana, Kratochvil T
 - Jako vývojovou desku jsme zvolili Arty A7-100T.  
 - Využili jsme porty ck_io0-ck_io11 jako vstup a porty ja0-ja6, jb0-jb6, jc0-jc6, jd0-jd6 a ck_io12 jako výstup.
 
-![deska](/Images/board.jpg)
+![deska](Images/board.jpg)
 
 <table>
 <tr><th> VSTUPY </th><th> VYSTUPY </th></tr>
@@ -92,13 +92,13 @@ Relé :
 ## Plošný spoj a jeho schéma
 - Pro tento projekt bylo zapotřebí použít prvky, kterými samotná vývojová deska nedisponuje. Proto bylo nutné navrhnout desku, která nám poskytne požadovanou funkcionalitu. Jako vstup máme připojeno 12 tlačítek a relé na IO piny, dále máme na Pmod přivedeny 4 sedmi-segmentové displeje. Níže se nachází navržené schéma a samotná PCB deska vytvořená v programu Autodesk EAGLE. 
 
-![schema_pcb](/Images/PCB_Schema.png)
+![schema_pcb](Images/PCB_Schema.png)
 
-![deska_pcb](/Images/PCB_Deska.png)
+![deska_pcb](Images/PCB_Deska.png)
 
 
 ## Schéma zapojení modulů
-![schema_modul](/Images/konecna_verzia.png)
+![schema_modul](Images/konecna_verzia.png)
 
 ## VHDL moduly
 ### Princip `relay_control`
@@ -656,21 +656,21 @@ end Behavioral;
 ### Simulace display_control
 [Link `display_control`](https://github.com/Krakenuz/Digital-electronics-1-Project/blob/main/Door%20lock%20system/Door%20lock%20system.srcs/sim_1/new/tb_display_control.vhd)
 
-![screenshot](/Images/simulace-display_control.PNG)
+![screenshot](Images/simulace-display_control.PNG)
 - Na začátku simulace je vidět, že po prvním nastavení všech 4 čísel není v testbenchy simulováno stisknutí tlačítka SET, což názorně ukazuje, že bez tohoto potvrzení není možné heslo nastavit. Následným resetováním se hodnoty na všech displejích změní na 0. Další sekvencí 4 stisknutí tlačítek a následným povrzením se údaje z displejů uloží a tím je nastaveno heslo. Po opětovném zadání tohoto hesla a potvrzením tlačítkem SET se Displej vynuluje a kód je nyní v režimu editace hesla, kdy následné potvrzení tlačítkem SET zobrazené heslo na displeji uloží a přepíše jím to původní. Při zadání špatného hesla, se program do režimu editace hesla nedostane, což je vidět při zadání hodnot "9 6 9 5".
 
 
 ### Simulace relay_control
 [Link `relay_control`](https://github.com/Krakenuz/Digital-electronics-1-Project/blob/main/Door%20lock%20system/Door%20lock%20system.srcs/sim_1/new/tb_relay_control.vhd)
 
-![screenshot](/Images/simulace-relay_control.PNG)
+![screenshot](Images/simulace-relay_control.PNG)
 - Na simulaci relay_control je pouze jednoduše ukázáno, že jakmile dojde na vstup z display_control správná kombinace, jež odpovídá uloženému heslu, modul změní hodnotu proměnné Relay_o na 1, sepne relé a otevře zámek.
 
 
 ### Simulace door_lock_system
 [Link `door_lock_system`](https://github.com/Krakenuz/Digital-electronics-1-Project/blob/main/Door%20lock%20system/Door%20lock%20system.srcs/sim_1/new/tb_door_lock_system.vhd)
 
-![screenshot](/Images/simulace-door_lock_system.PNG)
+![screenshot](Images/simulace-door_lock_system.PNG)
 - Jak již vyplinulo z popisu modulu výše a schématu, door_lock_system je v podstatě stejně jako top modul obal celé aplikace. Při zadání stisknutím jednotlivých tlačítek je v simulaci patrné, že se na jednotlivé sedmisegmentové displeje odesílá signál odpovídající zobrovanému číslu, zároveň je zde také vidět, že při nastavení hesla a jeho opětovném zadání se vždy otevře zámek a pokud není jinou funkcionalitou (například dalším zadáním, resetováním displeje nebo nastavováním hesla) nijak přerušen, zůstane zámek otevřen až do uplinutí jistého časového intervalu, na jehož konci se opět zamkne a displej vynuluje, viz. konec simulace.
 
 
